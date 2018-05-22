@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="Cache-Control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>BaiYunxing</title>
+    <title>DOM · BaiYunxing</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -70,6 +70,8 @@
 
     <link rel="preload" href= /css/style.css?v=20180501 as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <link rel="stylesheet" href= /css/mobile.css?v=20180501 media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
@@ -191,12 +193,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >No Brakes</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">DOM</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>No Brakes</a>
 </header>
@@ -210,24 +223,56 @@
 
 
 
+height:50vh;
+
 >
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            DOM
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <!-- 文章页标签  -->
+            
+            <div class="post-intro-meta">
+                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                <span class="post-intro-time">2018/05/22</span>
+                
+                <span class="shareWrapper">
+                    <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                    <span class="shareText">Share</span>
+                    <ul class="shareList">
+                        <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                            <div class="share-qrcode"></div>
+                        </li>
+                        <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                        <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                        <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                        <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                    </ul>
+                </span>
+            </div>
         
     </div>
 </div>
@@ -331,271 +376,81 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/ZABBIX/" >
-                
-                    <span>zabbix服务器监控和触发器表达式</span>
-            </a>
-            <div class="abstract-content">
-                zabbix：  服务器监控，网络监控，数据库监控
-zabbix自定义监控项配置：  为了满足用户的其它监控需求，zabbix允许用户创建自定义监控任务，主机是主要的监控载体，一般都在主机上配置监控项。
-利用zabbix创建自定义监控项：  1.找到你的zabbix_agentd.conf，设置允许添加自定义脚本将#Include=/usr/local/etc/zabbix_agentd.conf.d/前的#号去掉即可
-  
-  2 查看并进入自定义监控路径Monitor.conf:
-  
-  3  我们想让被监控端执行一个zabbix没有预定义的检测，zabbix的用户自定义参数功能提...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/vi编辑器/" >
-                
-                    <span>Linux/Unix下的vi文本编辑器</span>
-            </a>
-            <div class="abstract-content">
-                vi编辑器的两个模式:1、命令模式 2、编辑模式。在一个UNIX/Linux的shell命令或者一个以斜杠(/)、问号(?)或冒号(:)开始的vi命令后面用户需要键入回车键,而要切换到vi命令模式需要按Esc键。注意,以冒号(:)或者斜杠(/) 开始的vi命令会显示在屏幕底部,但其他命令都不会显示在屏幕上。
-写入打开关闭vi file  打开文件名为file的文件:w 将工作缓冲区的变化写入默认文件中:w file  将工作缓冲区的变化写入名为file的文件中:q 退出vi编辑器:wq 将工作缓冲区的变化写入文件并退出:q! 不将工作缓冲区的变化写入文件并退出vi编辑器 
-插入文本(vi...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/苹果审核指南/" >
-                
-                    <span>苹果审核指南</span>
-            </a>
-            <div class="abstract-content">
-                上架最后一部选项之IDFA
-1.出口合规信息：如果应用中采用了AES 和base 64 SHA512 加密算法，点no都是可以通过的，避免给自己找麻烦，这项选no就行。
-2.内容版权：只要没有明显的第三方logo，不会挂你的，那些分享第三方平台不算。 如果恰巧碰到了，一般审核工作人员会把侵权的截图发给你，那就需要找第三方授权了。
-3.广告标识符：
-想知道你的程序哪个三方库中使用到了IDFA，cd到项目根目录，用以下命令行查看
+            <main class="main post-page">
+    <article class="article-entry">
+        <h3 id="控制系统（VCS）"><a href="#控制系统（VCS）" class="headerlink" title="控制系统（VCS）"></a>控制系统（VCS）</h3><p>中央式 VCS 的中央仓库有两个主要功能：保存版本历史、同步团队代码。而在分布式 VCS 中，保存版本历史的工作转交到了每个团队成员的本地仓库中，中央仓库就只剩下了同步团队代码这一个主要任务。它的中央仓库依然也保存了历史版本，但这份历史版本更多的是作为团队间的同步中转站。</p>
+<p>中央式版本控制系统</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/10453069-bb2c5432ecc8fd83?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p><strong>分布式版本控制系统（DCVS）</strong></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/10453069-26445fe2221ff1bd?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>优点：</p>
+<p>大多数的操作可以在本地进行，所以速度更快，而且由于无需联网，所以即使不在公司甚至没有在联网，你也可以提交代码、查看历史，从而极大地减小了开发者的网络条件和物理位置的限制（例如，你可以在飞机上提交代码、切换分支等等）； 由于可以提交到本地，所以你可以分步提交代码，把代码提交做得更细，而不是一个提交包含很多代码，难以 review 也难以回溯。</p>
+<p>缺点：</p>
+<p>由于每一个机器都有完整的本地仓库，所以初次获取项目（Git 术语：clone）的时候会比较耗时；由于每个机器都有完整的本地仓库，所以本地占用的存储比中央式 VCS 要高。</p>
+<h4 id="Git-的最基本的工作模型"><a href="#Git-的最基本的工作模型" class="headerlink" title="Git 的最基本的工作模型"></a>Git 的最基本的工作模型</h4><p>1 从 GitHub 把中央仓库 clone 到本地（使用命令： git clone）</p>
+<p>2  把写完的代码提交（先用 git add 文件名 把文件添加到暂存区，再用 git commit 提交）</p>
+<p>3 在这个过程中，可以使用 git status 来随时查看工作目录的状态 每个文件有 “changed / unstaged”（已修改）, “staged”（已修改并暂存）, “commited”（已提交） 三种状态，以及一种特殊状态 “untracked”（未跟踪）</p>
+<p>4 提交一次或多次之后，把本地提交 push 到中央仓库（git push）</p>
+<h3 id="head-master-branch-的通俗化理解"><a href="#head-master-branch-的通俗化理解" class="headerlink" title="head,master,branch 的通俗化理解"></a>head,master,branch 的通俗化理解</h3><p>HEAD 是指向当前 commit 的引用，它具有唯一性，每个仓库中只有一个 HEAD。在每次提交时它都会自动向前移动到最新的 commit 。 </p>
+<p>branch 是一类引用。HEAD 除了直接指向 commit，也可以通过指向某个 branch 来间接指向 commit。当 HEAD 指向一个 branch 时，commit 发生时，HEAD 会带着它所指向的 branch 一起移动。 </p>
+<p><strong>master 是 Git 中的默认 branch，它和其它 branch 的区别在于： </strong></p>
+<p>1 新建的仓库中的第一个 commit 会被 master 自动指向；</p>
+<p>2 在 git clone 时，会自动 checkout 出 master。 </p>
+<p>3 大多数的开发团队会规定开发以 master 为核心，所有的分支都在一定程度上围绕着 master 来开发。这个在事实上构成了 master 和其它分支在地位上的一个额外的区别。</p>
+<p>branch 的创建、切换和删除： 创建 branch 的方式是 git branch 名称 或 git checkout -b 名称（创建后自动切换）； 切换的方式是 git checkout 名称； 删除的方式是 git branch -d 名称。</p>
+<h4 id="PUSH的本质"><a href="#PUSH的本质" class="headerlink" title="PUSH的本质"></a>PUSH的本质</h4><p>push 是把当前的分支上传到远程仓库，并把这个 branch 的路径上的所有 commits 也一并上传。</p>
+<p> push 的时候，如果当前分支是一个本地创建的分支，需要指定远程仓库名和分支名，用 git push origin branch_name 的格式，而不能只用 git push；或者可以通过 git config 修改 push.default 来改变 push 时的行为逻辑。</p>
+<p> push 的时候之后上传当前分支，并不会上传 HEAD；远程仓库的 HEAD 是永远指向默认分支（即 master）的。</p>
+<h4 id="Merge-合并commit"><a href="#Merge-合并commit" class="headerlink" title="Merge:合并commit"></a>Merge:合并commit</h4><p> merge 的含义：从两个 commit「分叉」的位置起，把目标 commit 的内容应用到当前 commit（HEAD 所指向的 commit），并生成一个新的 commit；</p>
+<p> merge 的适用场景： 单独开发的 branch 用完了以后，合并回原先的 branch； git pull 的内部自动操作。</p>
+<p> merge 的三种特殊情况： 冲突 原因：当前分支和目标分支修改了同一部分内容，Git 无法确定应该怎样合并；应对方法：解决冲突后手动 commit。 HEAD 领先于目标 commit：Git 什么也不做，空操作； HEAD 落后于目标 commit：fast-forward。</p>
+<h4 id="Feature-Branching-工作流"><a href="#Feature-Branching-工作流" class="headerlink" title="Feature Branching 工作流"></a>Feature Branching 工作流</h4><p> 每个新功能或者修改bug都新建一个 branch 来写；</p>
+<p> 写完以后，把branch push到中央仓库，代码分享给同事看；写的过程中，也可以分享给同事讨论。另外，借助 GitHub 等服务提供方的 Pull Request 功能，可以让代码分享变得更加方便；</p>
+<p> 分支确定可以合并后，把分支合并到 master ，并删除分支。</p>
+<h4 id="关于add"><a href="#关于add" class="headerlink" title="关于add"></a>关于add</h4><p> add . 把工作目录下所有修改的内容加入到暂存区</p>
+<p> add 不是添加文件名，而是添加文件修改的内容，每次修改都要add</p>
+<h4 id="stash：临时存放工作目录的改动"><a href="#stash：临时存放工作目录的改动" class="headerlink" title="stash：临时存放工作目录的改动"></a>stash：临时存放工作目录的改动</h4><p> git stash  你分支的工作目录的改动就被清空了，所有改动都被存了起来。</p>
+<p> 然后你就可以从你当前的工作分支切到 master 去给你的同事打包了……</p>
+<p> 打完包，切回你的分支，然后： git stash pop  你之前存储的东西就都回来了。很方便吧？</p>
+<h4 id="gitignore-：-排除不想被管理的文件和目录"><a href="#gitignore-：-排除不想被管理的文件和目录" class="headerlink" title=".gitignore ： 排除不想被管理的文件和目录"></a>.gitignore ： 排除不想被管理的文件和目录</h4><p> <img src="http://upload-images.jianshu.io/upload_images/10453069-8c5c3003cecf692e?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<h1 id="打头的是注释文件，其他的都是对忽略文件的配置。"><a href="#打头的是注释文件，其他的都是对忽略文件的配置。" class="headerlink" title="打头的是注释文件，其他的都是对忽略文件的配置。"></a>打头的是注释文件，其他的都是对忽略文件的配置。</h1><h4 id="其他："><a href="#其他：" class="headerlink" title="其他："></a>其他：</h4><p> 回滚：git reset –hard e377f60e28c8b84158 </p>
+<p> 强制提交 ： git push -f origin master</p>
 
-grep -r advertisingIdentifier . （别少了最后那个点号）。
-
-
-类似图上，包含了该怎么办，借鉴了mob的做法：
-友盟提供IDFA版和...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/Git版本控制/" >
-                
-                    <span>GIT版本控制</span>
-            </a>
-            <div class="abstract-content">
-                解析过程：
-HTML加载完毕，渲染引擎会在内存中把HTML文档，生成一个DOM树，getElementById是获取内中DOM上的元素节点。然后操作的时候修改的是该元素的属性。结构如下图：
-
-常用的DOM方法：操作节点，必须首先找到该元素。有三种方法来做这件事：
-通过id 找到HTML 元素
-document.getElementById(“demo”);
-通过标签名找到HTML 元素
-document.getElementsByTagName(“div”);
-通过类名找到HTML 元素
-document.getElementsByClassName(“a”);
-DOM的节点并不是孤立的...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/DOM/" >
-                
-                    <span>DOM</span>
-            </a>
-            <div class="abstract-content">
-                控制系统（VCS）中央式 VCS 的中央仓库有两个主要功能：保存版本历史、同步团队代码。而在分布式 VCS 中，保存版本历史的工作转交到了每个团队成员的本地仓库中，中央仓库就只剩下了同步团队代码这一个主要任务。它的中央仓库依然也保存了历史版本，但这份历史版本更多的是作为团队间的同步中转站。
-中央式版本控制系统
-
-分布式版本控制系统（DCVS）
-
-优点：
-大多数的操作可以在本地进行，所以速度更快，而且由于无需联网，所以即使不在公司甚至没有在联网，你也可以提交代码、查看历史，从而极大地减小了开发者的网络条件和物理位置的限制（例如，你可以在飞机上提交代码、切换分支等等）； 由于可以提交到本地，...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/jsonModel/" >
-                
-                    <span>第三方框架之JsonModel</span>
-            </a>
-            <div class="abstract-content">
-                ###有关jsonModel的使用
-
-对从服务器获取到的数据data进行相应的处理，转换model方式如下：
-1234567NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:(NSJSONReadingMutableLeaves) error:nil];DictModel*model = [[DictModelalloc]initWithDictionary:dicterror:nil];eventModel*event = model.event_bindings[0];NSLog(@&q...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/mixpanel初探/" >
-                
-                    <span>MixPanel代码阅读笔记-初探</span>
-            </a>
-            <div class="abstract-content">
-                验证我们的埋点数据点击我们的埋点按钮，在web端左上角会看见带着事件名称的标记，红色圈圈里有2发事件，一个是代码埋的和另一个可视化埋点都会通过界面反馈。
-
-其他功能有待探索a/btest:用于给非技术人员（运营人员、测试、产品）做实验设计，仅仅只是在元素、控件的层面的a/btest。当产品稳定后，更换app的局部控件，如背景颜色，文案，大小等属性，它的目的是点击次数的提升，先从一部分实验样本进行测试，如果优化的好可大规模的投放。
-
-
-代码的构建方面sdk 整体分几个模块，大致是按照业务逻辑划分的，总体感觉还算比较清晰
-source:主要的功能都在这，和其他的模块有紧密关联，如初始化代码埋...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/mixpanel对象序列化/" >
-                
-                    <span>MixPanel代码阅读笔记-对象序列化</span>
-            </a>
-            <div class="abstract-content">
-                Web端如何知道哪些控件是可以交互，以及这些控件的布局约束的呢？那就需要我们提供准确的数据了。
-Mixpanel开发了一套屏幕序列化机制，把当前的屏幕从window开始逐层序列化，对所有的可视化元素当成对象处理，把对象的属性按照一定的格式组织起来，以json的形式发给web端，web端拿到json后按照预先定好的规则反序列，绘制出可视化元素和拼接path出来。
-按照它的代码逻辑，可以将序列化操作看做由4部分构成：
-Description描述类：类型描述，类描述，属性描述，枚举描述
-Serializer序列化：MPApplicationStateSerializer和MPObjectSer...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/mixpanel绑定事件/" >
-                
-                    <span>MixPanel代码阅读笔记-绑定事件</span>
-            </a>
-            <div class="abstract-content">
-                在Mixpanel中事件绑定触发是由web端可视化埋点发送bindingRequest类型请求数据，移动端接受后尝试绑定，如果绑定顺利，反馈给web端，web端把绑定数据上传到服务器中。
-当我们打开应用APP，初始化时候会请求服务端接口，服务端下发数据到每台APP中，这样每台手机的APP都能实现相同埋点功能，这就是可视化埋点的魅力了。
-那么，数据传输到客户端后，是通过怎样的方式找到控件呢？找到控件后是如何给控件增加点击事件呢？
-通过Path寻找绑定控件的过程
-和序列化有所不同的是，事件绑定是从根控制器开始：[[Mixpanel sharedUIApplication] keyWindow...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/mixpanelWebsocket/" >
-                
-                    <span>MixPanel代码阅读笔记-websocket</span>
-            </a>
-            <div class="abstract-content">
-                WebSocket介绍
-WebSocket protocol 是HTML5一种新的协议。它实现了浏览器与服务器全双工通信(full-duplex)。一开始的握手需要借助HTTP请求完成。 
-WebSocket和HTTP、FTP一样也是应用层的协议，但是它是一种双向通信协议，是建立在TCP/IP之上的。 
-连接的过程是： 
-首先，客户端发起http请求,http请求里存放WebSocket支持的版本号等信息，如：Upgrade、Connection、WebSocket-Version等； 
-然后，服务器收到客户端的握手请求后，同样采用HTTP协议回馈数据； 
-最后，客户端收到连接成功的消息...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
+    </article>
+    <!-- license  -->
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2018/05/22/Git版本控制/" title= GIT版本控制 >
+                    <div class="nextTitle">GIT版本控制</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/2018/05/22/jsonModel/" title= 第三方框架之JsonModel >
+                    <div class="prevTitle">第三方框架之JsonModel</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
-    <nav class="page-nav">
-        <span class="page-number current">1</span><a class="page-number" href="/archives/2018/page/2/">2</a><a class="extend next" rel="next" href="/archives/2018/page/2/">NEXT &#62;</a>
-    </nav>
     
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -664,6 +519,24 @@ WebSocket和HTTP、FTP一样也是应用层的协议，但是它是一种双向�
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#控制系统（VCS）"><span class="toc-number">1.</span> <span class="toc-text">控制系统（VCS）</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#Git-的最基本的工作模型"><span class="toc-number">1.1.</span> <span class="toc-text">Git 的最基本的工作模型</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#head-master-branch-的通俗化理解"><span class="toc-number">2.</span> <span class="toc-text">head,master,branch 的通俗化理解</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#PUSH的本质"><span class="toc-number">2.1.</span> <span class="toc-text">PUSH的本质</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Merge-合并commit"><span class="toc-number">2.2.</span> <span class="toc-text">Merge:合并commit</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#Feature-Branching-工作流"><span class="toc-number">2.3.</span> <span class="toc-text">Feature Branching 工作流</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#关于add"><span class="toc-number">2.4.</span> <span class="toc-text">关于add</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#stash：临时存放工作目录的改动"><span class="toc-number">2.5.</span> <span class="toc-text">stash：临时存放工作目录的改动</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#gitignore-：-排除不想被管理的文件和目录"><span class="toc-number">2.6.</span> <span class="toc-text">.gitignore ： 排除不想被管理的文件和目录</span></a></li></ol></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#打头的是注释文件，其他的都是对忽略文件的配置。"><span class="toc-number"></span> <span class="toc-text">打头的是注释文件，其他的都是对忽略文件的配置。</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#其他："><span class="toc-number">0.1.</span> <span class="toc-text">其他：</span></a></li></ol></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -1049,6 +922,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
     
     </body>
 </html>

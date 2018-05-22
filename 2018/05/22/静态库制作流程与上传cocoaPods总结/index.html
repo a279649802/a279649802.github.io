@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="Cache-Control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>BaiYunxing</title>
+    <title>静态库制作流程与上传cocoaPods总结 · BaiYunxing</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -70,6 +70,8 @@
 
     <link rel="preload" href= /css/style.css?v=20180501 as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <link rel="stylesheet" href= /css/mobile.css?v=20180501 media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
@@ -191,12 +193,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/" >No Brakes</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">静态库制作流程与上传cocoaPods总结</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/>No Brakes</a>
 </header>
@@ -210,24 +223,56 @@
 
 
 
+height:50vh;
+
 >
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/)"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            静态库制作流程与上传cocoaPods总结
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <!-- 文章页标签  -->
+            
+            <div class="post-intro-meta">
+                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                <span class="post-intro-time">2018/05/22</span>
+                
+                <span class="shareWrapper">
+                    <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                    <span class="shareText">Share</span>
+                    <ul class="shareList">
+                        <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                            <div class="share-qrcode"></div>
+                        </li>
+                        <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                        <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                        <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                        <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                    </ul>
+                </span>
+            </div>
         
     </div>
 </div>
@@ -331,271 +376,78 @@
 </script>        
         <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/ZABBIX/" >
-                
-                    <span>zabbix服务器监控和触发器表达式</span>
-            </a>
-            <div class="abstract-content">
-                zabbix：  服务器监控，网络监控，数据库监控
-zabbix自定义监控项配置：  为了满足用户的其它监控需求，zabbix允许用户创建自定义监控任务，主机是主要的监控载体，一般都在主机上配置监控项。
-利用zabbix创建自定义监控项：  1.找到你的zabbix_agentd.conf，设置允许添加自定义脚本将#Include=/usr/local/etc/zabbix_agentd.conf.d/前的#号去掉即可
-  
-  2 查看并进入自定义监控路径Monitor.conf:
-  
-  3  我们想让被监控端执行一个zabbix没有预定义的检测，zabbix的用户自定义参数功能提...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/vi编辑器/" >
-                
-                    <span>Linux/Unix下的vi文本编辑器</span>
-            </a>
-            <div class="abstract-content">
-                vi编辑器的两个模式:1、命令模式 2、编辑模式。在一个UNIX/Linux的shell命令或者一个以斜杠(/)、问号(?)或冒号(:)开始的vi命令后面用户需要键入回车键,而要切换到vi命令模式需要按Esc键。注意,以冒号(:)或者斜杠(/) 开始的vi命令会显示在屏幕底部,但其他命令都不会显示在屏幕上。
-写入打开关闭vi file  打开文件名为file的文件:w 将工作缓冲区的变化写入默认文件中:w file  将工作缓冲区的变化写入名为file的文件中:q 退出vi编辑器:wq 将工作缓冲区的变化写入文件并退出:q! 不将工作缓冲区的变化写入文件并退出vi编辑器 
-插入文本(vi...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/苹果审核指南/" >
-                
-                    <span>苹果审核指南</span>
-            </a>
-            <div class="abstract-content">
-                上架最后一部选项之IDFA
-1.出口合规信息：如果应用中采用了AES 和base 64 SHA512 加密算法，点no都是可以通过的，避免给自己找麻烦，这项选no就行。
-2.内容版权：只要没有明显的第三方logo，不会挂你的，那些分享第三方平台不算。 如果恰巧碰到了，一般审核工作人员会把侵权的截图发给你，那就需要找第三方授权了。
-3.广告标识符：
-想知道你的程序哪个三方库中使用到了IDFA，cd到项目根目录，用以下命令行查看
+            <main class="main post-page">
+    <article class="article-entry">
+        <p>IOS 静态库分成.a和.framework两种. .a库是项目里文件.m的集合，最终会编译成.o文件。通过命令行解压提取.o文件：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/10453069-83886abb6700b267?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<hr>
+<h4 id="静态库的架构ARM："><a href="#静态库的架构ARM：" class="headerlink" title="静态库的架构ARM："></a>静态库的架构ARM：</h4><p>每种型号的手机都会对应一种cpu，而每个cpu都对应几种架构。</p>
+<p>有i386/x86_64/armv7/armv7s/armv64这样几种。当然armv6/armv7/armv7s的机型现今市面上已经不常见了，armv64是最主流的机型了。模拟器32位处理器测试需要i386架构，模拟器64位处理器测试需要x86_64架构。</p>
+<p><strong>arm64：(iphone5s以上使用的架构</strong>，64位操作系统)，而iphone5c和iphone5都是使用32位的系统。当然，我们可以在iphone5s上使用32架构，但是会降低性能。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/10453069-ba0b48f7396d7261?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p><strong>SDK开发可以把Debug模式改成NO，打出来的包包含了所有的架构。</strong></p>
+<p>1.Architectures</p>
+<p>指定工程被编译成可支持哪些指令集类型，而支持的指令集越多，就会编译出包含多个指令集代码的数据包，对应生成二进制包就越大，也就是ipa包会变大。</p>
+<p>2.Valid Architectures</p>
+<p>限制指令集的范围，编译出哪种指令集的包，将由Architectures与Valid Architectures（因此这个不能为空）的交集来确定</p>
+<p>3.Build Active Architecture Only</p>
+<p>定是否只对当前连接设备所支持的指令集编译</p>
+<p>当其值设置为YES，是为了debug的时候编译速度更快，它只编译当前的architecture版本，而设置为no时，会编译所有的版本。 所以，一<strong>般debug的时候可以选择设置为yes，release的时候要改为no</strong>，以适应不同设备。</p>
+<p>总结：</p>
+<p>Valid Architectures设置的支持arm指令集版本有：armv7/armv7s/arm64，对应的Architectures设置的支持arm指令集版本有：armv7s，这时Xcode只会生成一个armv7s指令集的二进制包。</p>
+<p>将Architectures支持arm指令集设置为：armv7,armv7s，对应的Valid Architectures的支持的指令集设置为：armv7s,arm64，那么此时，XCode生成二进制包所支持的指令集只有armv7s</p>
+<hr>
+<h4 id="减少静态库的体积"><a href="#减少静态库的体积" class="headerlink" title="减少静态库的体积"></a>减少静态库的体积</h4><p>将Generate Debug Symbols 选项改为NO，可以明显降低包的体积</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/10453069-118286e319f49640?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<h4 id="导包中过程中注意点："><a href="#导包中过程中注意点：" class="headerlink" title="导包中过程中注意点："></a>导包中过程中注意点：</h4><p>因为静态库中是没有办法包含静态库了，就算将第三方静态库打包进自己的静态库中，然后编译的时候它是不会将第三方静态库一起编译的。所以三方静态库也要和自己的库一起暴露出来。</p>
+<p>Destination: 决定是引用的方式还是拷贝的方式导入项目。</p>
+<p>added folders： 目录结构方式，groups无目录结构，直接引用不需要通过文件名逐层寻找，事实上打包是把所有的文件都放在.app根目录下面了。folders需要按照文件路径来寻找和我们访问磁盘路径类似。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/10453069-ed8210b24c0ee8fe?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>需要勾选add to targets，不然不会产生包和项目之间的链接关系，使用会报错：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/10453069-6969c27e6e5cd96a?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>other linker flags：如果我们库使用了分类，请加-ObjC,否则编译不通过</p>
+<p>－ObjC：加了这个参数后，链接器就会把静态库中所有的Objective-C类和分类都加载到最后的可执行文件中</p>
+<p>－all_load：会让链接器把所有找到的目标文件都加载到可执行文件中，但是千万不要随便使用这个参数！假如你使用了不止一个静态库文件，然后又使用了这个参数，那么你很有可能会遇到ld: duplicate symbol错误，因为不同的库文件里面可能会有相同的目标文件，所以建议在遇到-ObjC失效的情况下使用-force_load参数。</p>
+<p>-force_load：所做的事情跟-all_load其实是一样的，但是-force_load需要指定要进行全部加载的库文件的路径，这样的话，你就只是完全加载了一个库文件，不影响其余库文件的按需加载</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/10453069-10e3e742b0f197c5?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>Copy Bundle Resources：这里面放了资源文件，应用程序在运行时需要使用，如plist文件，XIB 文件和图像文件、声音文件等等。如果在集成后出现not found file问题的话，首先来找下这里。</p>
+<p>Link Binary With Libraries：连接二进制文件和库</p>
+<p>在完成源文件的编译之后，连接框架（或库），这样代码就可以使用这些框架类了。它和下图同理：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/10453069-b3cf857de4bc658d?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<h4 id="关于CocoaPods上传"><a href="#关于CocoaPods上传" class="headerlink" title="关于CocoaPods上传"></a>关于CocoaPods上传</h4><h4 id="编译和预处理过程："><a href="#编译和预处理过程：" class="headerlink" title="编译和预处理过程："></a>编译和预处理过程：</h4><p>Compile Sources 构建阶段分为两步：预处理（Preprocessing）和编译（Compiling）。预处理阶段的目标是为每一个实现文件（.m）创建中间文件（intermediate file）。中间文件仍然类似实现文件的Objective-C代码，但是中间文件会变得非常大。</p>
+<p>在创建中间文件时，预处理器负责处理实现文件（.m）中所有的预处理指令（preprocessor directives）。预处理指令是所有以 # 开头的语句，如 #import。<strong>#import 语句将替换为实际引用文件的内容</strong>。这就是说文件越多可能编译出来的中间文件越大，这样ipa包或者库的体积也会越大，我们可以合并一些功能类似的文件做精简，但是无脑合并会对代码阅读上造成不好的影响。</p>
+<p>例如，一个实现文件 <strong><em>.m 引用了 </em></strong>.h 头文件；为 .m 创建的中间文件将包含 <strong><em>.h和 </em></strong>.m文件。还不止这些，并且 <strong><em>.h 头文件引用了其他 2 个文件 UIKit.h和CoreLocation.h，还有可能这 2 个文件引用了其他的头文件 .h，这些头文件将全部包含在该实现文件</em></strong>.m 创建的中间文件中（intermediate file）。</p>
 
-grep -r advertisingIdentifier . （别少了最后那个点号）。
-
-
-类似图上，包含了该怎么办，借鉴了mob的做法：
-友盟提供IDFA版和...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/Git版本控制/" >
-                
-                    <span>GIT版本控制</span>
-            </a>
-            <div class="abstract-content">
-                解析过程：
-HTML加载完毕，渲染引擎会在内存中把HTML文档，生成一个DOM树，getElementById是获取内中DOM上的元素节点。然后操作的时候修改的是该元素的属性。结构如下图：
-
-常用的DOM方法：操作节点，必须首先找到该元素。有三种方法来做这件事：
-通过id 找到HTML 元素
-document.getElementById(“demo”);
-通过标签名找到HTML 元素
-document.getElementsByTagName(“div”);
-通过类名找到HTML 元素
-document.getElementsByClassName(“a”);
-DOM的节点并不是孤立的...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/DOM/" >
-                
-                    <span>DOM</span>
-            </a>
-            <div class="abstract-content">
-                控制系统（VCS）中央式 VCS 的中央仓库有两个主要功能：保存版本历史、同步团队代码。而在分布式 VCS 中，保存版本历史的工作转交到了每个团队成员的本地仓库中，中央仓库就只剩下了同步团队代码这一个主要任务。它的中央仓库依然也保存了历史版本，但这份历史版本更多的是作为团队间的同步中转站。
-中央式版本控制系统
-
-分布式版本控制系统（DCVS）
-
-优点：
-大多数的操作可以在本地进行，所以速度更快，而且由于无需联网，所以即使不在公司甚至没有在联网，你也可以提交代码、查看历史，从而极大地减小了开发者的网络条件和物理位置的限制（例如，你可以在飞机上提交代码、切换分支等等）； 由于可以提交到本地，...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/jsonModel/" >
-                
-                    <span>第三方框架之JsonModel</span>
-            </a>
-            <div class="abstract-content">
-                ###有关jsonModel的使用
-
-对从服务器获取到的数据data进行相应的处理，转换model方式如下：
-1234567NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:(NSJSONReadingMutableLeaves) error:nil];DictModel*model = [[DictModelalloc]initWithDictionary:dicterror:nil];eventModel*event = model.event_bindings[0];NSLog(@&q...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/mixpanel初探/" >
-                
-                    <span>MixPanel代码阅读笔记-初探</span>
-            </a>
-            <div class="abstract-content">
-                验证我们的埋点数据点击我们的埋点按钮，在web端左上角会看见带着事件名称的标记，红色圈圈里有2发事件，一个是代码埋的和另一个可视化埋点都会通过界面反馈。
-
-其他功能有待探索a/btest:用于给非技术人员（运营人员、测试、产品）做实验设计，仅仅只是在元素、控件的层面的a/btest。当产品稳定后，更换app的局部控件，如背景颜色，文案，大小等属性，它的目的是点击次数的提升，先从一部分实验样本进行测试，如果优化的好可大规模的投放。
-
-
-代码的构建方面sdk 整体分几个模块，大致是按照业务逻辑划分的，总体感觉还算比较清晰
-source:主要的功能都在这，和其他的模块有紧密关联，如初始化代码埋...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/mixpanel对象序列化/" >
-                
-                    <span>MixPanel代码阅读笔记-对象序列化</span>
-            </a>
-            <div class="abstract-content">
-                Web端如何知道哪些控件是可以交互，以及这些控件的布局约束的呢？那就需要我们提供准确的数据了。
-Mixpanel开发了一套屏幕序列化机制，把当前的屏幕从window开始逐层序列化，对所有的可视化元素当成对象处理，把对象的属性按照一定的格式组织起来，以json的形式发给web端，web端拿到json后按照预先定好的规则反序列，绘制出可视化元素和拼接path出来。
-按照它的代码逻辑，可以将序列化操作看做由4部分构成：
-Description描述类：类型描述，类描述，属性描述，枚举描述
-Serializer序列化：MPApplicationStateSerializer和MPObjectSer...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/mixpanel绑定事件/" >
-                
-                    <span>MixPanel代码阅读笔记-绑定事件</span>
-            </a>
-            <div class="abstract-content">
-                在Mixpanel中事件绑定触发是由web端可视化埋点发送bindingRequest类型请求数据，移动端接受后尝试绑定，如果绑定顺利，反馈给web端，web端把绑定数据上传到服务器中。
-当我们打开应用APP，初始化时候会请求服务端接口，服务端下发数据到每台APP中，这样每台手机的APP都能实现相同埋点功能，这就是可视化埋点的魅力了。
-那么，数据传输到客户端后，是通过怎样的方式找到控件呢？找到控件后是如何给控件增加点击事件呢？
-通过Path寻找绑定控件的过程
-和序列化有所不同的是，事件绑定是从根控制器开始：[[Mixpanel sharedUIApplication] keyWindow...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/2018/05/22/mixpanelWebsocket/" >
-                
-                    <span>MixPanel代码阅读笔记-websocket</span>
-            </a>
-            <div class="abstract-content">
-                WebSocket介绍
-WebSocket protocol 是HTML5一种新的协议。它实现了浏览器与服务器全双工通信(full-duplex)。一开始的握手需要借助HTTP请求完成。 
-WebSocket和HTTP、FTP一样也是应用层的协议，但是它是一种双向通信协议，是建立在TCP/IP之上的。 
-连接的过程是： 
-首先，客户端发起http请求,http请求里存放WebSocket支持的版本号等信息，如：Upgrade、Connection、WebSocket-Version等； 
-然后，服务器收到客户端的握手请求后，同样采用HTTP协议回馈数据； 
-最后，客户端收到连接成功的消息...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
+    </article>
+    <!-- license  -->
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/2018/05/22/mixpanelWebsocket/" title= MixPanel代码阅读笔记-websocket >
+                    <div class="nextTitle">MixPanel代码阅读笔记-websocket</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
-    <nav class="page-nav">
-        <span class="page-number current">1</span><a class="page-number" href="/archives/2018/page/2/">2</a><a class="extend next" rel="next" href="/archives/2018/page/2/">NEXT &#62;</a>
-    </nav>
     
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -664,6 +516,24 @@ WebSocket和HTTP、FTP一样也是应用层的协议，但是它是一种双向�
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#静态库的架构ARM："><span class="toc-number">1.</span> <span class="toc-text">静态库的架构ARM：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#减少静态库的体积"><span class="toc-number">2.</span> <span class="toc-text">减少静态库的体积</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#导包中过程中注意点："><span class="toc-number">3.</span> <span class="toc-text">导包中过程中注意点：</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#关于CocoaPods上传"><span class="toc-number">4.</span> <span class="toc-text">关于CocoaPods上传</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#编译和预处理过程："><span class="toc-number">5.</span> <span class="toc-text">编译和预处理过程：</span></a></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -1049,6 +919,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/scripts/share.js" async></script>    
     
     </body>
 </html>
