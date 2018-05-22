@@ -15,7 +15,7 @@
     <meta name="description" content="">
     <meta name="Cache-Control" content="no-cache">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-    <title>fi3ework&#39;s Studio</title>
+    <title>苹果审核指南 · fi3ework&#39;s Studio</title>
     <style type="text/css">
     @font-face {
         font-family: 'Oswald-Regular';
@@ -70,6 +70,8 @@
 
     <link rel="preload" href= /blog/css/style.css?v=20180501 as="style" onload="this.onload=null;this.rel='stylesheet'" />
     <link rel="stylesheet" href= /blog/css/mobile.css?v=20180501 media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
         
     <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
 /* This file is meant as a standalone workflow for
@@ -191,12 +193,23 @@
 </head>
 
     
+        <body class="post-body">
+    
     
 <header class="header">
 
     <div class="read-progress"></div>
     <div class="header-sidebar-menu">&#xe775;</div>
     <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/blog/" >fi3ework&#39;s Studio.</a>
+            </div>
+            <div class="post-title">
+                <a href="#" class="post-name">苹果审核指南</a>
+            </div>
+    </div>
     
     <a class="home-link" href=/blog/>fi3ework's Studio.</a>
 </header>
@@ -210,24 +223,61 @@
 
 
 
+height:50vh;
+
 >
     
     <!-- 主页  -->
+    
+    
+    <!-- 404页  -->
             
     <div class="site-intro-placeholder"></div>
-    <div class="site-intro-img" style="background-image: url(/blog/)"></div>
+    <div class="site-intro-img" style="background-image: url(/blog/source/intro/post-bg.jpg)"></div>
     <div class="site-intro-meta">
         <!-- 标题  -->
         <h1 class="intro-title">
             <!-- 主页  -->
+            
+            苹果审核指南
+            <!-- 404 -->
             
         </h1>
         <!-- 副标题 -->
         <p class="intro-subtitle">
             <!-- 主页副标题  -->
             
+            
+            <!-- 404 -->
+            
         </p>
         <!-- 文章页meta -->
+        
+            <!-- 文章页标签  -->
+            
+            <div class="post-intro-meta">
+                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                <span class="post-intro-time">2018/05/22</span>
+                
+                <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                    <span class="iconfont-archer">&#xe602;</span>
+                    <span id="busuanzi_value_page_pv"></span>
+                </span>
+                
+                <span class="shareWrapper">
+                    <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                    <span class="shareText">Share</span>
+                    <ul class="shareList">
+                        <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                            <div class="share-qrcode"></div>
+                        </li>
+                        <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                        <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                        <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                        <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                    </ul>
+                </span>
+            </div>
         
     </div>
 </div>
@@ -331,84 +381,102 @@
 </script>        
         <img class="loading" src="/blog/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
         <div class="container container-unloaded">
-            <main class="main index-page">
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/blog/2018/05/22/苹果审核指南/" >
-                
-                    <span>苹果审核指南</span>
-            </a>
-            <div class="abstract-content">
-                上架最后一部选项之IDFA
-1.出口合规信息：如果应用中采用了AES 和base 64 SHA512 加密算法，点no都是可以通过的，避免给自己找麻烦，这项选no就行。
-2.内容版权：只要没有明显的第三方logo，不会挂你的，那些分享第三方平台不算。 如果恰巧碰到了，一般审核工作人员会把侵权的截图发给你，那就需要找第三方授权了。
-3.广告标识符：
-想知道你的程序哪个三方库中使用到了IDFA，cd到项目根目录，用以下命令行查看
+            <main class="main post-page">
+    <article class="article-entry">
+        <h4 id="上架最后一部选项之IDFA"><a href="#上架最后一部选项之IDFA" class="headerlink" title="上架最后一部选项之IDFA"></a>上架最后一部选项之IDFA</h4><p><img src="http://upload-images.jianshu.io/upload_images/10453069-bc8a961bf37e9cbe?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>1.出口合规信息：如果应用中采用了AES 和base 64 SHA512 加密算法，点no都是可以通过的，避免给自己找麻烦，这项选no就行。</p>
+<p>2.内容版权：只要没有明显的第三方logo，不会挂你的，那些分享第三方平台不算。 如果恰巧碰到了，一般审核工作人员会把侵权的截图发给你，那就需要找第三方授权了。</p>
+<p>3.广告标识符：</p>
+<p>想知道你的程序哪个三方库中使用到了IDFA，cd到项目根目录，用以下命令行查看</p>
+<blockquote>
+<p>grep -r advertisingIdentifier . （别少了最后那个点号）。</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/10453069-d90d236429723119?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>类似图上，包含了该怎么办，借鉴了mob的做法：</p>
+<p>友盟提供IDFA版和不含IDFA版两个SDK，两个SDK在数据上并没有差异，采集IDFA是为了防止今后因为苹果可能禁止目前使用的openudid而造成的数据波动。</p>
+<p><strong><em>由于Appstore禁止不使用广告而采集IDFA的app上架，我们勾选2，3，4项即可</em></strong></p>
+<p>1.serve advertisements within the app</p>
+<p>服务应用中的广告。如果你的应用中集成了广告的时候，你需要勾选这一项。</p>
+<p>√2.Attribute this app installation to a previously served advertisement.</p>
+<p>跟踪广告带来的安装。</p>
+<p>√3.Attribute an action taken within this app to a previously served advertisement<br>，<br>跟踪广告带来的用户的后续行为。</p>
+<p>√4.Limit Ad Tracking setting in iOS</p>
+<p>这一项下的内容其实就是对你的应用使用idfa的目的做下确认，只要你选择了采集idfa，那么这一项都是需要勾选的。</p>
+<hr>
+<h3 id="提审的流程-–-预审、机器审核和人工审核"><a href="#提审的流程-–-预审、机器审核和人工审核" class="headerlink" title="提审的流程 – 预审、机器审核和人工审核"></a>提审的流程 – 预审、机器审核和人工审核</h3><h6 id="预审阶段："><a href="#预审阶段：" class="headerlink" title="预审阶段："></a>预审阶段：</h6><p>打包上传提交appstore这个阶段是预审阶段，会对代码里的一些配置文件plist进行审核，比如没有对使用相册相机或地理位置等权限做说明会被直接打回来，发邮件告诉你。没有问题的话才会在itunes里出现</p>
+<h6 id="机器审核阶段："><a href="#机器审核阶段：" class="headerlink" title="机器审核阶段："></a>机器审核阶段：</h6><p>也就是 Waiting For Review（等待审核）阶段一般是机审，比如马甲包就是复制品，有太多相似的功能。被拒原因4.3就是这一阶段的审核结果。</p>
+<h6 id="人工审核："><a href="#人工审核：" class="headerlink" title="人工审核："></a>人工审核：</h6><p>即In Review（审核）阶段。这一阶段一般会看描述，截图，监测app使用情况有没有明显的bug这类的，ipv6就在这阶段被提出来的。可以通过后台查看有无美国ip登录从而判断是否进入了这一阶段。</p>
+<hr>
+<p>###常被拒绝的条款</p>
+<p>######2.1大礼包<br><img src="https://upload-images.jianshu.io/upload_images/10453069-7764b116d86ccd9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="8358211-008649dae13e33b3.png"><br>1.1.6 –包含虚假信息，功能或误导性元数据</p>
+<p>一般是因为标题或者icon和截图等有误导的嫌疑，或有些关键词是被苹果列入黑名单的，例如红包包、话费等，但审核条款又没有明确指出。对于上述情况的解决办法是使用保守的文案或素材。</p>
+<p>2.3.0 – 含有不经审核也可更改App功能</p>
+<p>如改变App功能的热更新，这种情况需要把热更新去除,或者对热更新模块代码做深度混淆处理!</p>
+<p>2.3.1 – 含有隐藏功能或为记录的功能，包括定向到赌博或彩票网站的开关。</p>
+<p>常规解决方式：去除隐藏功能模块代码或将需要隐藏功能的代码及定向跳转链接网址做混淆处理，适当增加逻辑复杂度。3.1.1 –应用内购以外的支付机制来解锁App中的功能或功能。</p>
+<p>对于第三方支付,尽可能避免使用易扫描的SDK版本,推荐使用H5版本支付。支付跳转链接相应的做屏蔽混淆处理。</p>
+<p>4.3.0 –是另一款应用的复制品，或与另一款应用明显相似。</p>
+<p>被认为是重复App或马甲包，变更UI和名称，填充无用代码等，下面会具体讲。</p>
+<p>5.2.1 –未由拥有并负责提供该应用程序提供的任何服务的法律实体提交。</p>
+<p>未提供 App 上架所需的行业资质，比如：金融营业许可证、游戏版号等。这个上面讲过些常规方式。</p>
+<p>5.3.4 – 含有货币游戏（如：体育下注、赌场游戏等），但未提供相关许可资质。</p>
+<p>同上，提供资质，审核时最好不要勾选中国区，或使用海外账号。</p>
+<p>①如果App没有违反上述任何一点，其实直接回复没有违反即可！当然，如果想增加过审几率也可以按照邮件中罗列的审核指南一一进行解释，说明自家 App 并不存在这些规则中的问题，尽可能描述详细。如果回复后并没有推进，可以配合加速审核或审核申诉，不过需要注意，加速审核次数不要用太多，审核申诉可能引来审核团队更严格的审核，需要谨慎。</p>
+<p>注：2.1刚出现的时，即使App有违规行为直接回复也是有可能过审的，但是目前有点用烂了，苹果那边应该是敏感了，目前过审几率极低，而且有可能被延期。</p>
+<p>②如果App违反上述某点，建议认真修改后回复苹果，重点看上次或历史被拒记录，确定回复侧重点。如果回复后并没有推进，也可以配合加速审核或审核申诉，不过有延期等风险。</p>
+<p>③除了这些方法，有人还用过一种方式过审，即用新账号上传，上面说过“苹果审核人员应该并没有开始审核，仅是针对App的历史违规记录或开发者账号的违规记录等发送了这封邮件。”但这种方式并不适合所有App，而且苹果可能会发现新账号的App和旧账号以及旧App的关系而产生连带处罚，要看运气。</p>
+<p>下面是小助手收集的几个问题，在这里做一下回复：</p>
+<p>A、2.1有解吗？有，目前出现了代过审，具体操作方式都是私下进行的，和5.2.1和3.2.1一样，大家都去用，反复刺激苹果，审核机制又会被更改。</p>
+<p>B、只有更新的App才有可能收到被拒大礼包？其实不是，收到这封邮件的App中既有新提交的App，也有要更新版本的App。</p>
+<p>C、2.1是机审？目前数据和被拒的现象来看，主要是机审，人工审核比例不高，多数是针对的代码、App或开发者账号的历史违规记录等发送的邮件消息。</p>
+<p>pp的历史违规行为和账号的历史违规行为都有可能触发2.1大礼包。</p>
+<p>当然除了以上被拒原因外，4.3（重复App）、IPv6、3.2（f）、PLA1.2等仍是被拒常见原因！下面说一下4.3。</p>
+<p>4.3主要针对的是重复App，就是马甲包，4.3被拒主要在机审阶段，解决这个问题通常采用的方式简单来说分以下几步：</p>
+<p>A、改名字；</p>
+<p>B、修改素材及UI色调等，例如修改icon，修改主色调；</p>
+<p>C、修改功能界面等，可改功能可做小开关；</p>
+<p>D、填充代码（最好50%以上）或注释块；</p>
+<p>除以上步骤外，还需要注意相同的马甲包提交至少要间隔一天以上，避免被同一个审核员看到。当然，还可以配合着升级套路：升级version（版本）号、换bundle id，换开发者账号再提交审核。</p>
+<p>如果以上步骤不奏效，还可以尝试采用修改应用价格、发布地区、产品分类等方式。不过注意，App上架后价格、发布地区是可以修改的，但产品分类不可以，对这个有要求的慎用！</p>
+<p>IPv6的话，确认代码没问题的话，重新提交1~2次就好了。多数是审核人员所在的网络环境导致的问题，如果不放心，重新提交时将截图或拍下视频放附件里或直接向苹果申诉。如果 App本身有问题，例如不兼容 IPv6，最好的办法是让App兼容 IPv6 或通过升级服务器来支持IPv6，其他代码问题问问技术就OK了。</p>
 
-grep -r advertisingIdentifier . （别少了最后那个点号）。
-
-
-类似图上，包含了该怎么办，借鉴了mob的做法：
-友盟提供IDFA版和...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
+    </article>
+    <!-- license  -->
     
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/blog/2018/05/22/jsonModel/" >
-                
-                    <span>第三方框架之JsonModel</span>
-            </a>
-            <div class="abstract-content">
-                ###有关jsonModel的使用
-
-对从服务器获取到的数据data进行相应的处理，转换model方式如下：
-1234567NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:(NSJSONReadingMutableLeaves) error:nil];DictModel*model = [[DictModelalloc]initWithDictionary:dicterror:nil];eventModel*event = model.event_bindings[0];NSLog(@&q...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
-    
-    
-    
-        <article class="index-post">
-            <a class="abstract-title" href = "/blog/2018/05/22/vi编辑器/" >
-                
-                    <span>Linux/Unix下的vi文本编辑器</span>
-            </a>
-            <div class="abstract-content">
-                ######vi编辑器的两个模式:1、命令模式 2、编辑模式。在一个UNIX/Linux的shell命令或者一个以斜杠(/)、问号(?)或冒号(:)开始的vi命令后面用户需要键入回车键,而要切换到vi命令模式需要按Esc键。注意,以冒号(:)或者斜杠(/) 开始的vi命令会显示在屏幕底部,但其他命令都不会显示在屏幕上。
-######写入打开关闭vi file  打开文件名为file的文件:w 将工作缓冲区的变化写入默认文件中:w file  将工作缓冲区的变化写入名为file的文件中:q 退出vi编辑器:wq 将工作缓冲区的变化写入文件并退出:q! 不将工作缓冲区的变化写入文件并退出vi...
-            </div>
-            <div class="abstract-post-meta">
-                <!-- date  -->
-                <div class="abstract-date">
-                    <span class="abstract-calander iconfont-archer">&#xe676;</span><span class="abstract-time">2018/05/22</span>
-                </div>
-                <!-- tags  -->
-                
-            </div>
-        </article>
+        <div class="license-wrapper">
+            <p>原文作者: <a href="http://baiyunxing.com/blog">Yunxing Bai</a>
+            <p>原文链接: <a href="http://baiyunxing.com/blog/2018/05/22/苹果审核指南/">http://baiyunxing.com/blog/2018/05/22/苹果审核指南/</a>
+            <p>发表日期: <a href="http://baiyunxing.com/blog/2018/05/22/苹果审核指南/">May 22nd 2018, 10:49:10</a>
+            <p>版权声明: 本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
     
     <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href= "/blog/2018/05/22/jsonModel/" title= 第三方框架之JsonModel >
+                    <div class="prevTitle">第三方框架之JsonModel</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
+
+<!-- City版安装代码已完成 -->
     
+    
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
 </main>
             <!-- profile -->
             
@@ -483,6 +551,24 @@ grep -r advertisingIdentifier . （别少了最后那个点号）。
 </footer>
     </div>
     <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
+
+
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+        </div>
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#上架最后一部选项之IDFA"><span class="toc-number">1.</span> <span class="toc-text">上架最后一部选项之IDFA</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#提审的流程-–-预审、机器审核和人工审核"><span class="toc-number"></span> <span class="toc-text">提审的流程 – 预审、机器审核和人工审核</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#预审阶段："><span class="toc-number">0.0.1.</span> <span class="toc-text">预审阶段：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#机器审核阶段："><span class="toc-number">0.0.2.</span> <span class="toc-text">机器审核阶段：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#人工审核："><span class="toc-number">0.0.3.</span> <span class="toc-text">人工审核：</span></a></li></ol></li></ol></li></ol>
+    </div>
     
     <div class="back-top iconfont-archer">&#xe639;</div>
     <div class="sidebar sidebar-hide">
@@ -632,6 +718,8 @@ jsonContent:
     
     </div>
     <!-- async load share.js -->
+    
+        <script src="/blog/scripts/share.js" async></script>    
     
     </body>
 </html>
