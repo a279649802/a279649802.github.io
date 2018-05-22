@@ -1,307 +1,727 @@
-
-
 <!DOCTYPE html>
-<html lang="">
-<head prefix="og: http://ogp.me/ns#">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+<html>
+    <!-- title -->
+
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" >
+    <meta name="author" content="Yunxing Bai">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="Yunxing Bai">
+    <meta name="keywords" content="白云星的博客 | Yunxing Bai">
     <meta name="description" content="">
-    <title>苹果审核指南 | 白云星的博客</title>
+    <meta name="Cache-Control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>苹果审核指南 · fi3ework&#39;s Studio</title>
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/blog/font/Oswald-Regular.ttf");
+    }
 
-    <!-- Open Graph -->
-    <meta name="description" content="&amp;#x4E0A;&amp;#x67B6;&amp;#x6700;&amp;#x540E;&amp;#x4E00;&amp;#x90E8;&amp;#x9009;&amp;#x9879;&amp;#x4E4B;IDFA 1.&amp;#x51FA;&amp;#x53E3;&amp;#x5408;&amp;#x89C4;&amp;#x4FE1;&amp;#x606F;&amp;#xFF1A;&amp;#x5982;&amp;#x679C;&amp;#x5E94;&amp;#x7528;&amp;#x4E2D;&amp;#x91C7;&amp;#x7528;&amp;#x4E86;A">
-<meta property="og:type" content="article">
-<meta property="og:title" content="苹果审核指南">
-<meta property="og:url" content="http://baiyunxing.com/blog/2018/05/22/苹果审核指南/index.html">
-<meta property="og:site_name" content="白云星的博客">
-<meta property="og:description" content="&amp;#x4E0A;&amp;#x67B6;&amp;#x6700;&amp;#x540E;&amp;#x4E00;&amp;#x90E8;&amp;#x9009;&amp;#x9879;&amp;#x4E4B;IDFA 1.&amp;#x51FA;&amp;#x53E3;&amp;#x5408;&amp;#x89C4;&amp;#x4FE1;&amp;#x606F;&amp;#xFF1A;&amp;#x5982;&amp;#x679C;&amp;#x5E94;&amp;#x7528;&amp;#x4E2D;&amp;#x91C7;&amp;#x7528;&amp;#x4E86;A">
-<meta property="og:locale" content="default">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/10453069-bc8a961bf37e9cbe?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/10453069-d90d236429723119?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:image" content="https://upload-images.jianshu.io/upload_images/10453069-7764b116d86ccd9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="og:updated_time" content="2018-05-22T07:23:52.284Z">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="苹果审核指南">
-<meta name="twitter:description" content="&amp;#x4E0A;&amp;#x67B6;&amp;#x6700;&amp;#x540E;&amp;#x4E00;&amp;#x90E8;&amp;#x9009;&amp;#x9879;&amp;#x4E4B;IDFA 1.&amp;#x51FA;&amp;#x53E3;&amp;#x5408;&amp;#x89C4;&amp;#x4FE1;&amp;#x606F;&amp;#xFF1A;&amp;#x5982;&amp;#x679C;&amp;#x5E94;&amp;#x7528;&amp;#x4E2D;&amp;#x91C7;&amp;#x7528;&amp;#x4E86;A">
-<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/10453069-bc8a961bf37e9cbe?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+    body {
+        margin: 0;
+    }
 
-    <script type="application/ld+json">
-{
-  "@context": "http://schema.org",
-  "@type": "Person",
-  "email": "mailto:",
-  "image": "",
-  "name": "Yunxing Bai",
-  "url": "http://baiyunxing.com/blog"
-}
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s 1;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+</style>
+
+    <link rel="preload" href= /blog/css/style.css?v=20180501 as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <link rel="stylesheet" href= /blog/css/mobile.css?v=20180501 media="(max-width: 980px)">
+    
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+        
+    <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+/* This file is meant as a standalone workflow for
+- testing support for link[rel=preload]
+- enabling async CSS loading in browsers that do not support rel=preload
+- applying rel preload css once loaded, whether supported or not.
+*/ -->
+<script>
+(function( w ){
+	"use strict";
+	// rel=preload support test
+	if( !w.loadCSS ){
+		w.loadCSS = function(){};
+	}
+	// define on the loadCSS obj
+	var rp = loadCSS.relpreload = {};
+	// rel=preload feature support test
+	// runs once and returns a function for compat purposes
+	rp.support = (function(){
+		var ret;
+		try {
+			ret = w.document.createElement( "link" ).relList.supports( "preload" );
+		} catch (e) {
+			ret = false;
+		}
+		return function(){
+			return ret;
+		};
+	})();
+
+	// if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+	// then change that media back to its intended value on load
+	rp.bindMediaToggle = function( link ){
+		// remember existing media attr for ultimate state, or default to 'all'
+		var finalMedia = link.media || "all";
+
+		function enableStylesheet(){
+			link.media = finalMedia;
+		}
+
+		// bind load handlers to enable media
+		if( link.addEventListener ){
+			link.addEventListener( "load", enableStylesheet );
+		} else if( link.attachEvent ){
+			link.attachEvent( "onload", enableStylesheet );
+		}
+
+		// Set rel and non-applicable media type to start an async request
+		// note: timeout allows this to happen async to let rendering continue in IE
+		setTimeout(function(){
+			link.rel = "stylesheet";
+			link.media = "only x";
+		});
+		// also enable media after 3 seconds,
+		// which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+		setTimeout( enableStylesheet, 3000 );
+	};
+
+	// loop through link elements in DOM
+	rp.poly = function(){
+		// double check this to prevent external calls from running
+		if( rp.support() ){
+			return;
+		}
+		var links = w.document.getElementsByTagName( "link" );
+		for( var i = 0; i < links.length; i++ ){
+			var link = links[ i ];
+			// qualify links to those with rel=preload and as=style attrs
+			if( link.rel === "preload" && link.getAttribute( "as" ) === "style" && !link.getAttribute( "data-loadcss" ) ){
+				// prevent rerunning on link
+				link.setAttribute( "data-loadcss", true );
+				// bind listeners to toggle media back
+				rp.bindMediaToggle( link );
+			}
+		}
+	};
+
+	// if unsupported, run the polyfill
+	if( !rp.support() ){
+		// run once at least
+		rp.poly();
+
+		// rerun poly on an interval until onload
+		var run = w.setInterval( rp.poly, 500 );
+		if( w.addEventListener ){
+			w.addEventListener( "load", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		} else if( w.attachEvent ){
+			w.attachEvent( "onload", function(){
+				rp.poly();
+				w.clearInterval( run );
+			} );
+		}
+	}
+
+
+	// commonjs
+	if( typeof exports !== "undefined" ){
+		exports.loadCSS = loadCSS;
+	}
+	else {
+		w.loadCSS = loadCSS;
+	}
+}( typeof global !== "undefined" ? global : this ) );
 </script>
-    <script>
-    var algoliaEnabled = false;
-    
-</script>
 
+    <link rel="icon" href= "/blog/assets/favicon.ico" />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js" as="script" />    
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js" as="script" />
+    <link rel="preload" href="/blog/scripts/main.js" as="script" />
+    <link rel="preload" as="font" href="/blog/font/Oswald-Regular.ttf" crossorigin>
+    <link rel="preload" as="font" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" crossorigin>
+    <!-- 百度统计  -->
     
-
+    <!-- 谷歌统计  -->
     
-    
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-    
-    
-    
-        <!-- stylesheets list from config.yml -->
-        
-        <link rel="stylesheet" href="/blog/css/aloha.css">
-        
-        <link rel="stylesheet" href="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.css">
-        
-        <link rel="stylesheet" href="//cdn.bootcss.com/magnific-popup.js/1.1.0/magnific-popup.min.css">
-        
-    
-
 </head>
-<body id="body" style="margin-bottom: 0;" class="pushable">
 
-    <div class="ui top fixed menu">
-        <a class="item" id="menu-icon"><i class="sidebar icon"></i></a>
-    </div>
+    
+        <body class="post-body">
+    
+    
+<header class="header">
 
-    <div id="menu-sidebar" class="ui left vertical sidebar menu">
-
-    <div id="sidebar-top">
-        <div class="content">
-            <h3>白云星的博客</h3>
-        </div>
-    </div>
-    <div class="ui container sidebar-card">
-    <div class="ui people shape content">
-        <div class="active side">
-            <div class="ui card">
-                <div class="image">
-                    <img class="ui medium bordered image" src="/blog/images/avatar.jpg">
-                </div>
-                <div class="content">
-                    <a class="header">Yunxing Bai</a>
-                    
-                </div>
-                <div class="extra content">
-                    <div class="ui list">
-                        
-                        
-                    </div>
-
-                </div>
-                <div class="extra content">
-                    <div class="ui list">
-                        
-                    </div>
-                </div>
+    <div class="read-progress"></div>
+    <div class="header-sidebar-menu">&#xe775;</div>
+    <!-- post页的toggle banner  -->
+    
+    <div class="banner">
+            <div class="blog-title">
+                <a href="/blog/" >fi3ework&#39;s Studio.</a>
             </div>
-        </div>
+            <div class="post-title">
+                <a href="#" class="post-name">苹果审核指南</a>
+            </div>
     </div>
+    
+    <a class="home-link" href=/blog/>fi3ework's Studio.</a>
+</header>
+    <div class="wrapper">
+        <div class="site-intro" style=
 
 
-</div>
 
+
+
+
+
+
+height:50vh;
+
+>
+    
+    <!-- 主页  -->
     
     
-
-    
-
-    
-    <a href="/index.html" class="item" >
-        <i class="home icon"></i>
-        首页
-    </a>
-
-    
-
-    
-</div>
-
-    <div class="pusher body-content">
-        <div id="content" class="ui main container">
-            <!--<div class="ui one column grid">-->
-                <!--<div class="column">-->
-                    <!--<div class="ui main container">-->
-                        <div id="post-苹果审核指南" class="ui main container article-type-post">
-
-    
-
-    <div class="ui divided grid">
-
-        <div class="two column row" id="article-content">
-
-            <div class="thirteen wide computer thirteen wide tablet sixteen wide mobile column">
-                
-
-<h1 class="ui header">
-    
-    苹果审核指南
-</h1>
-
-
-
-                <div class="article-inner">
-
-                    <div class="article-entry" itemprop="articleBody">
-                        
-                        <h4 id="&#x4E0A;&#x67B6;&#x6700;&#x540E;&#x4E00;&#x90E8;&#x9009;&#x9879;&#x4E4B;IDFA"><a href="#&#x4E0A;&#x67B6;&#x6700;&#x540E;&#x4E00;&#x90E8;&#x9009;&#x9879;&#x4E4B;IDFA" class="headerlink" title="&#x4E0A;&#x67B6;&#x6700;&#x540E;&#x4E00;&#x90E8;&#x9009;&#x9879;&#x4E4B;IDFA"></a>&#x4E0A;&#x67B6;&#x6700;&#x540E;&#x4E00;&#x90E8;&#x9009;&#x9879;&#x4E4B;IDFA</h4><p><a class="magnific-img" href="http://upload-images.jianshu.io/upload_images/10453069-bc8a961bf37e9cbe?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"><img src="http://upload-images.jianshu.io/upload_images/10453069-bc8a961bf37e9cbe?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image" class="ui centered image"></a></p>
-<p>1.&#x51FA;&#x53E3;&#x5408;&#x89C4;&#x4FE1;&#x606F;&#xFF1A;&#x5982;&#x679C;&#x5E94;&#x7528;&#x4E2D;&#x91C7;&#x7528;&#x4E86;AES &#x548C;base 64 SHA512 &#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#xFF0C;&#x70B9;no&#x90FD;&#x662F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x7684;&#xFF0C;&#x907F;&#x514D;&#x7ED9;&#x81EA;&#x5DF1;&#x627E;&#x9EBB;&#x70E6;&#xFF0C;&#x8FD9;&#x9879;&#x9009;no&#x5C31;&#x884C;&#x3002;</p>
-<p>2.&#x5185;&#x5BB9;&#x7248;&#x6743;&#xFF1A;&#x53EA;&#x8981;&#x6CA1;&#x6709;&#x660E;&#x663E;&#x7684;&#x7B2C;&#x4E09;&#x65B9;logo&#xFF0C;&#x4E0D;&#x4F1A;&#x6302;&#x4F60;&#x7684;&#xFF0C;&#x90A3;&#x4E9B;&#x5206;&#x4EAB;&#x7B2C;&#x4E09;&#x65B9;&#x5E73;&#x53F0;&#x4E0D;&#x7B97;&#x3002; &#x5982;&#x679C;&#x6070;&#x5DE7;&#x78B0;&#x5230;&#x4E86;&#xFF0C;&#x4E00;&#x822C;&#x5BA1;&#x6838;&#x5DE5;&#x4F5C;&#x4EBA;&#x5458;&#x4F1A;&#x628A;&#x4FB5;&#x6743;&#x7684;&#x622A;&#x56FE;&#x53D1;&#x7ED9;&#x4F60;&#xFF0C;&#x90A3;&#x5C31;&#x9700;&#x8981;&#x627E;&#x7B2C;&#x4E09;&#x65B9;&#x6388;&#x6743;&#x4E86;&#x3002;</p>
-<p>3.&#x5E7F;&#x544A;&#x6807;&#x8BC6;&#x7B26;&#xFF1A;</p>
-<p>&#x60F3;&#x77E5;&#x9053;&#x4F60;&#x7684;&#x7A0B;&#x5E8F;&#x54EA;&#x4E2A;&#x4E09;&#x65B9;&#x5E93;&#x4E2D;&#x4F7F;&#x7528;&#x5230;&#x4E86;IDFA&#xFF0C;cd&#x5230;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#xFF0C;&#x7528;&#x4EE5;&#x4E0B;&#x547D;&#x4EE4;&#x884C;&#x67E5;&#x770B;</p>
-<blockquote>
-<p>grep -r advertisingIdentifier . &#xFF08;&#x522B;&#x5C11;&#x4E86;&#x6700;&#x540E;&#x90A3;&#x4E2A;&#x70B9;&#x53F7;&#xFF09;&#x3002;</p>
-</blockquote>
-<p><a class="magnific-img" href="http://upload-images.jianshu.io/upload_images/10453069-d90d236429723119?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"><img src="http://upload-images.jianshu.io/upload_images/10453069-d90d236429723119?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image" class="ui centered image"></a></p>
-<p>&#x7C7B;&#x4F3C;&#x56FE;&#x4E0A;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x8BE5;&#x600E;&#x4E48;&#x529E;&#xFF0C;&#x501F;&#x9274;&#x4E86;mob&#x7684;&#x505A;&#x6CD5;&#xFF1A;</p>
-<p>&#x53CB;&#x76DF;&#x63D0;&#x4F9B;IDFA&#x7248;&#x548C;&#x4E0D;&#x542B;IDFA&#x7248;&#x4E24;&#x4E2A;SDK&#xFF0C;&#x4E24;&#x4E2A;SDK&#x5728;&#x6570;&#x636E;&#x4E0A;&#x5E76;&#x6CA1;&#x6709;&#x5DEE;&#x5F02;&#xFF0C;&#x91C7;&#x96C6;IDFA&#x662F;&#x4E3A;&#x4E86;&#x9632;&#x6B62;&#x4ECA;&#x540E;&#x56E0;&#x4E3A;&#x82F9;&#x679C;&#x53EF;&#x80FD;&#x7981;&#x6B62;&#x76EE;&#x524D;&#x4F7F;&#x7528;&#x7684;openudid&#x800C;&#x9020;&#x6210;&#x7684;&#x6570;&#x636E;&#x6CE2;&#x52A8;&#x3002;</p>
-<p><strong><em>&#x7531;&#x4E8E;Appstore&#x7981;&#x6B62;&#x4E0D;&#x4F7F;&#x7528;&#x5E7F;&#x544A;&#x800C;&#x91C7;&#x96C6;IDFA&#x7684;app&#x4E0A;&#x67B6;&#xFF0C;&#x6211;&#x4EEC;&#x52FE;&#x9009;2&#xFF0C;3&#xFF0C;4&#x9879;&#x5373;&#x53EF;</em></strong></p>
-<p>1.serve advertisements within the app</p>
-<p>&#x670D;&#x52A1;&#x5E94;&#x7528;&#x4E2D;&#x7684;&#x5E7F;&#x544A;&#x3002;&#x5982;&#x679C;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x4E2D;&#x96C6;&#x6210;&#x4E86;&#x5E7F;&#x544A;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x52FE;&#x9009;&#x8FD9;&#x4E00;&#x9879;&#x3002;</p>
-<p>&#x221A;2.Attribute this app installation to a previously served advertisement.</p>
-<p>&#x8DDF;&#x8E2A;&#x5E7F;&#x544A;&#x5E26;&#x6765;&#x7684;&#x5B89;&#x88C5;&#x3002;</p>
-<p>&#x221A;3.Attribute an action taken within this app to a previously served advertisement<br>&#xFF0C;<br>&#x8DDF;&#x8E2A;&#x5E7F;&#x544A;&#x5E26;&#x6765;&#x7684;&#x7528;&#x6237;&#x7684;&#x540E;&#x7EED;&#x884C;&#x4E3A;&#x3002;</p>
-<p>&#x221A;4.Limit Ad Tracking setting in iOS</p>
-<p>&#x8FD9;&#x4E00;&#x9879;&#x4E0B;&#x7684;&#x5185;&#x5BB9;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x5BF9;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x4F7F;&#x7528;idfa&#x7684;&#x76EE;&#x7684;&#x505A;&#x4E0B;&#x786E;&#x8BA4;&#xFF0C;&#x53EA;&#x8981;&#x4F60;&#x9009;&#x62E9;&#x4E86;&#x91C7;&#x96C6;idfa&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E00;&#x9879;&#x90FD;&#x662F;&#x9700;&#x8981;&#x52FE;&#x9009;&#x7684;&#x3002;</p>
-<hr>
-<h3 id="&#x63D0;&#x5BA1;&#x7684;&#x6D41;&#x7A0B;-&#x2013;-&#x9884;&#x5BA1;&#x3001;&#x673A;&#x5668;&#x5BA1;&#x6838;&#x548C;&#x4EBA;&#x5DE5;&#x5BA1;&#x6838;"><a href="#&#x63D0;&#x5BA1;&#x7684;&#x6D41;&#x7A0B;-&#x2013;-&#x9884;&#x5BA1;&#x3001;&#x673A;&#x5668;&#x5BA1;&#x6838;&#x548C;&#x4EBA;&#x5DE5;&#x5BA1;&#x6838;" class="headerlink" title="&#x63D0;&#x5BA1;&#x7684;&#x6D41;&#x7A0B; &#x2013; &#x9884;&#x5BA1;&#x3001;&#x673A;&#x5668;&#x5BA1;&#x6838;&#x548C;&#x4EBA;&#x5DE5;&#x5BA1;&#x6838;"></a>&#x63D0;&#x5BA1;&#x7684;&#x6D41;&#x7A0B; &#x2013; &#x9884;&#x5BA1;&#x3001;&#x673A;&#x5668;&#x5BA1;&#x6838;&#x548C;&#x4EBA;&#x5DE5;&#x5BA1;&#x6838;</h3><h6 id="&#x9884;&#x5BA1;&#x9636;&#x6BB5;&#xFF1A;"><a href="#&#x9884;&#x5BA1;&#x9636;&#x6BB5;&#xFF1A;" class="headerlink" title="&#x9884;&#x5BA1;&#x9636;&#x6BB5;&#xFF1A;"></a>&#x9884;&#x5BA1;&#x9636;&#x6BB5;&#xFF1A;</h6><p>&#x6253;&#x5305;&#x4E0A;&#x4F20;&#x63D0;&#x4EA4;appstore&#x8FD9;&#x4E2A;&#x9636;&#x6BB5;&#x662F;&#x9884;&#x5BA1;&#x9636;&#x6BB5;&#xFF0C;&#x4F1A;&#x5BF9;&#x4EE3;&#x7801;&#x91CC;&#x7684;&#x4E00;&#x4E9B;&#x914D;&#x7F6E;&#x6587;&#x4EF6;plist&#x8FDB;&#x884C;&#x5BA1;&#x6838;&#xFF0C;&#x6BD4;&#x5982;&#x6CA1;&#x6709;&#x5BF9;&#x4F7F;&#x7528;&#x76F8;&#x518C;&#x76F8;&#x673A;&#x6216;&#x5730;&#x7406;&#x4F4D;&#x7F6E;&#x7B49;&#x6743;&#x9650;&#x505A;&#x8BF4;&#x660E;&#x4F1A;&#x88AB;&#x76F4;&#x63A5;&#x6253;&#x56DE;&#x6765;&#xFF0C;&#x53D1;&#x90AE;&#x4EF6;&#x544A;&#x8BC9;&#x4F60;&#x3002;&#x6CA1;&#x6709;&#x95EE;&#x9898;&#x7684;&#x8BDD;&#x624D;&#x4F1A;&#x5728;itunes&#x91CC;&#x51FA;&#x73B0;</p>
-<h6 id="&#x673A;&#x5668;&#x5BA1;&#x6838;&#x9636;&#x6BB5;&#xFF1A;"><a href="#&#x673A;&#x5668;&#x5BA1;&#x6838;&#x9636;&#x6BB5;&#xFF1A;" class="headerlink" title="&#x673A;&#x5668;&#x5BA1;&#x6838;&#x9636;&#x6BB5;&#xFF1A;"></a>&#x673A;&#x5668;&#x5BA1;&#x6838;&#x9636;&#x6BB5;&#xFF1A;</h6><p>&#x4E5F;&#x5C31;&#x662F; Waiting For Review&#xFF08;&#x7B49;&#x5F85;&#x5BA1;&#x6838;&#xFF09;&#x9636;&#x6BB5;&#x4E00;&#x822C;&#x662F;&#x673A;&#x5BA1;&#xFF0C;&#x6BD4;&#x5982;&#x9A6C;&#x7532;&#x5305;&#x5C31;&#x662F;&#x590D;&#x5236;&#x54C1;&#xFF0C;&#x6709;&#x592A;&#x591A;&#x76F8;&#x4F3C;&#x7684;&#x529F;&#x80FD;&#x3002;&#x88AB;&#x62D2;&#x539F;&#x56E0;4.3&#x5C31;&#x662F;&#x8FD9;&#x4E00;&#x9636;&#x6BB5;&#x7684;&#x5BA1;&#x6838;&#x7ED3;&#x679C;&#x3002;</p>
-<h6 id="&#x4EBA;&#x5DE5;&#x5BA1;&#x6838;&#xFF1A;"><a href="#&#x4EBA;&#x5DE5;&#x5BA1;&#x6838;&#xFF1A;" class="headerlink" title="&#x4EBA;&#x5DE5;&#x5BA1;&#x6838;&#xFF1A;"></a>&#x4EBA;&#x5DE5;&#x5BA1;&#x6838;&#xFF1A;</h6><p>&#x5373;In Review&#xFF08;&#x5BA1;&#x6838;&#xFF09;&#x9636;&#x6BB5;&#x3002;&#x8FD9;&#x4E00;&#x9636;&#x6BB5;&#x4E00;&#x822C;&#x4F1A;&#x770B;&#x63CF;&#x8FF0;&#xFF0C;&#x622A;&#x56FE;&#xFF0C;&#x76D1;&#x6D4B;app&#x4F7F;&#x7528;&#x60C5;&#x51B5;&#x6709;&#x6CA1;&#x6709;&#x660E;&#x663E;&#x7684;bug&#x8FD9;&#x7C7B;&#x7684;&#xFF0C;ipv6&#x5C31;&#x5728;&#x8FD9;&#x9636;&#x6BB5;&#x88AB;&#x63D0;&#x51FA;&#x6765;&#x7684;&#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x540E;&#x53F0;&#x67E5;&#x770B;&#x6709;&#x65E0;&#x7F8E;&#x56FD;ip&#x767B;&#x5F55;&#x4ECE;&#x800C;&#x5224;&#x65AD;&#x662F;&#x5426;&#x8FDB;&#x5165;&#x4E86;&#x8FD9;&#x4E00;&#x9636;&#x6BB5;&#x3002;</p>
-<hr>
-<p>###&#x5E38;&#x88AB;&#x62D2;&#x7EDD;&#x7684;&#x6761;&#x6B3E;</p>
-<p>######2.1&#x5927;&#x793C;&#x5305;<br><a class="magnific-img" href="https://upload-images.jianshu.io/upload_images/10453069-7764b116d86ccd9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"><img src="https://upload-images.jianshu.io/upload_images/10453069-7764b116d86ccd9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="8358211-008649dae13e33b3.png" class="ui centered image"></a><br>1.1.6 &#x2013;&#x5305;&#x542B;&#x865A;&#x5047;&#x4FE1;&#x606F;&#xFF0C;&#x529F;&#x80FD;&#x6216;&#x8BEF;&#x5BFC;&#x6027;&#x5143;&#x6570;&#x636E;</p>
-<p>&#x4E00;&#x822C;&#x662F;&#x56E0;&#x4E3A;&#x6807;&#x9898;&#x6216;&#x8005;icon&#x548C;&#x622A;&#x56FE;&#x7B49;&#x6709;&#x8BEF;&#x5BFC;&#x7684;&#x5ACC;&#x7591;&#xFF0C;&#x6216;&#x6709;&#x4E9B;&#x5173;&#x952E;&#x8BCD;&#x662F;&#x88AB;&#x82F9;&#x679C;&#x5217;&#x5165;&#x9ED1;&#x540D;&#x5355;&#x7684;&#xFF0C;&#x4F8B;&#x5982;&#x7EA2;&#x5305;&#x5305;&#x3001;&#x8BDD;&#x8D39;&#x7B49;&#xFF0C;&#x4F46;&#x5BA1;&#x6838;&#x6761;&#x6B3E;&#x53C8;&#x6CA1;&#x6709;&#x660E;&#x786E;&#x6307;&#x51FA;&#x3002;&#x5BF9;&#x4E8E;&#x4E0A;&#x8FF0;&#x60C5;&#x51B5;&#x7684;&#x89E3;&#x51B3;&#x529E;&#x6CD5;&#x662F;&#x4F7F;&#x7528;&#x4FDD;&#x5B88;&#x7684;&#x6587;&#x6848;&#x6216;&#x7D20;&#x6750;&#x3002;</p>
-<p>2.3.0 &#x2013; &#x542B;&#x6709;&#x4E0D;&#x7ECF;&#x5BA1;&#x6838;&#x4E5F;&#x53EF;&#x66F4;&#x6539;App&#x529F;&#x80FD;</p>
-<p>&#x5982;&#x6539;&#x53D8;App&#x529F;&#x80FD;&#x7684;&#x70ED;&#x66F4;&#x65B0;&#xFF0C;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x9700;&#x8981;&#x628A;&#x70ED;&#x66F4;&#x65B0;&#x53BB;&#x9664;,&#x6216;&#x8005;&#x5BF9;&#x70ED;&#x66F4;&#x65B0;&#x6A21;&#x5757;&#x4EE3;&#x7801;&#x505A;&#x6DF1;&#x5EA6;&#x6DF7;&#x6DC6;&#x5904;&#x7406;!</p>
-<p>2.3.1 &#x2013; &#x542B;&#x6709;&#x9690;&#x85CF;&#x529F;&#x80FD;&#x6216;&#x4E3A;&#x8BB0;&#x5F55;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5305;&#x62EC;&#x5B9A;&#x5411;&#x5230;&#x8D4C;&#x535A;&#x6216;&#x5F69;&#x7968;&#x7F51;&#x7AD9;&#x7684;&#x5F00;&#x5173;&#x3002;</p>
-<p>&#x5E38;&#x89C4;&#x89E3;&#x51B3;&#x65B9;&#x5F0F;&#xFF1A;&#x53BB;&#x9664;&#x9690;&#x85CF;&#x529F;&#x80FD;&#x6A21;&#x5757;&#x4EE3;&#x7801;&#x6216;&#x5C06;&#x9700;&#x8981;&#x9690;&#x85CF;&#x529F;&#x80FD;&#x7684;&#x4EE3;&#x7801;&#x53CA;&#x5B9A;&#x5411;&#x8DF3;&#x8F6C;&#x94FE;&#x63A5;&#x7F51;&#x5740;&#x505A;&#x6DF7;&#x6DC6;&#x5904;&#x7406;&#xFF0C;&#x9002;&#x5F53;&#x589E;&#x52A0;&#x903B;&#x8F91;&#x590D;&#x6742;&#x5EA6;&#x3002;3.1.1 &#x2013;&#x5E94;&#x7528;&#x5185;&#x8D2D;&#x4EE5;&#x5916;&#x7684;&#x652F;&#x4ED8;&#x673A;&#x5236;&#x6765;&#x89E3;&#x9501;App&#x4E2D;&#x7684;&#x529F;&#x80FD;&#x6216;&#x529F;&#x80FD;&#x3002;</p>
-<p>&#x5BF9;&#x4E8E;&#x7B2C;&#x4E09;&#x65B9;&#x652F;&#x4ED8;,&#x5C3D;&#x53EF;&#x80FD;&#x907F;&#x514D;&#x4F7F;&#x7528;&#x6613;&#x626B;&#x63CF;&#x7684;SDK&#x7248;&#x672C;,&#x63A8;&#x8350;&#x4F7F;&#x7528;H5&#x7248;&#x672C;&#x652F;&#x4ED8;&#x3002;&#x652F;&#x4ED8;&#x8DF3;&#x8F6C;&#x94FE;&#x63A5;&#x76F8;&#x5E94;&#x7684;&#x505A;&#x5C4F;&#x853D;&#x6DF7;&#x6DC6;&#x5904;&#x7406;&#x3002;</p>
-<p>4.3.0 &#x2013;&#x662F;&#x53E6;&#x4E00;&#x6B3E;&#x5E94;&#x7528;&#x7684;&#x590D;&#x5236;&#x54C1;&#xFF0C;&#x6216;&#x4E0E;&#x53E6;&#x4E00;&#x6B3E;&#x5E94;&#x7528;&#x660E;&#x663E;&#x76F8;&#x4F3C;&#x3002;</p>
-<p>&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x91CD;&#x590D;App&#x6216;&#x9A6C;&#x7532;&#x5305;&#xFF0C;&#x53D8;&#x66F4;UI&#x548C;&#x540D;&#x79F0;&#xFF0C;&#x586B;&#x5145;&#x65E0;&#x7528;&#x4EE3;&#x7801;&#x7B49;&#xFF0C;&#x4E0B;&#x9762;&#x4F1A;&#x5177;&#x4F53;&#x8BB2;&#x3002;</p>
-<p>5.2.1 &#x2013;&#x672A;&#x7531;&#x62E5;&#x6709;&#x5E76;&#x8D1F;&#x8D23;&#x63D0;&#x4F9B;&#x8BE5;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x63D0;&#x4F9B;&#x7684;&#x4EFB;&#x4F55;&#x670D;&#x52A1;&#x7684;&#x6CD5;&#x5F8B;&#x5B9E;&#x4F53;&#x63D0;&#x4EA4;&#x3002;</p>
-<p>&#x672A;&#x63D0;&#x4F9B; App &#x4E0A;&#x67B6;&#x6240;&#x9700;&#x7684;&#x884C;&#x4E1A;&#x8D44;&#x8D28;&#xFF0C;&#x6BD4;&#x5982;&#xFF1A;&#x91D1;&#x878D;&#x8425;&#x4E1A;&#x8BB8;&#x53EF;&#x8BC1;&#x3001;&#x6E38;&#x620F;&#x7248;&#x53F7;&#x7B49;&#x3002;&#x8FD9;&#x4E2A;&#x4E0A;&#x9762;&#x8BB2;&#x8FC7;&#x4E9B;&#x5E38;&#x89C4;&#x65B9;&#x5F0F;&#x3002;</p>
-<p>5.3.4 &#x2013; &#x542B;&#x6709;&#x8D27;&#x5E01;&#x6E38;&#x620F;&#xFF08;&#x5982;&#xFF1A;&#x4F53;&#x80B2;&#x4E0B;&#x6CE8;&#x3001;&#x8D4C;&#x573A;&#x6E38;&#x620F;&#x7B49;&#xFF09;&#xFF0C;&#x4F46;&#x672A;&#x63D0;&#x4F9B;&#x76F8;&#x5173;&#x8BB8;&#x53EF;&#x8D44;&#x8D28;&#x3002;</p>
-<p>&#x540C;&#x4E0A;&#xFF0C;&#x63D0;&#x4F9B;&#x8D44;&#x8D28;&#xFF0C;&#x5BA1;&#x6838;&#x65F6;&#x6700;&#x597D;&#x4E0D;&#x8981;&#x52FE;&#x9009;&#x4E2D;&#x56FD;&#x533A;&#xFF0C;&#x6216;&#x4F7F;&#x7528;&#x6D77;&#x5916;&#x8D26;&#x53F7;&#x3002;</p>
-<p>&#x2460;&#x5982;&#x679C;App&#x6CA1;&#x6709;&#x8FDD;&#x53CD;&#x4E0A;&#x8FF0;&#x4EFB;&#x4F55;&#x4E00;&#x70B9;&#xFF0C;&#x5176;&#x5B9E;&#x76F4;&#x63A5;&#x56DE;&#x590D;&#x6CA1;&#x6709;&#x8FDD;&#x53CD;&#x5373;&#x53EF;&#xFF01;&#x5F53;&#x7136;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x589E;&#x52A0;&#x8FC7;&#x5BA1;&#x51E0;&#x7387;&#x4E5F;&#x53EF;&#x4EE5;&#x6309;&#x7167;&#x90AE;&#x4EF6;&#x4E2D;&#x7F57;&#x5217;&#x7684;&#x5BA1;&#x6838;&#x6307;&#x5357;&#x4E00;&#x4E00;&#x8FDB;&#x884C;&#x89E3;&#x91CA;&#xFF0C;&#x8BF4;&#x660E;&#x81EA;&#x5BB6; App &#x5E76;&#x4E0D;&#x5B58;&#x5728;&#x8FD9;&#x4E9B;&#x89C4;&#x5219;&#x4E2D;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5C3D;&#x53EF;&#x80FD;&#x63CF;&#x8FF0;&#x8BE6;&#x7EC6;&#x3002;&#x5982;&#x679C;&#x56DE;&#x590D;&#x540E;&#x5E76;&#x6CA1;&#x6709;&#x63A8;&#x8FDB;&#xFF0C;&#x53EF;&#x4EE5;&#x914D;&#x5408;&#x52A0;&#x901F;&#x5BA1;&#x6838;&#x6216;&#x5BA1;&#x6838;&#x7533;&#x8BC9;&#xFF0C;&#x4E0D;&#x8FC7;&#x9700;&#x8981;&#x6CE8;&#x610F;&#xFF0C;&#x52A0;&#x901F;&#x5BA1;&#x6838;&#x6B21;&#x6570;&#x4E0D;&#x8981;&#x7528;&#x592A;&#x591A;&#xFF0C;&#x5BA1;&#x6838;&#x7533;&#x8BC9;&#x53EF;&#x80FD;&#x5F15;&#x6765;&#x5BA1;&#x6838;&#x56E2;&#x961F;&#x66F4;&#x4E25;&#x683C;&#x7684;&#x5BA1;&#x6838;&#xFF0C;&#x9700;&#x8981;&#x8C28;&#x614E;&#x3002;</p>
-<p>&#x6CE8;&#xFF1A;2.1&#x521A;&#x51FA;&#x73B0;&#x7684;&#x65F6;&#xFF0C;&#x5373;&#x4F7F;App&#x6709;&#x8FDD;&#x89C4;&#x884C;&#x4E3A;&#x76F4;&#x63A5;&#x56DE;&#x590D;&#x4E5F;&#x662F;&#x6709;&#x53EF;&#x80FD;&#x8FC7;&#x5BA1;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x76EE;&#x524D;&#x6709;&#x70B9;&#x7528;&#x70C2;&#x4E86;&#xFF0C;&#x82F9;&#x679C;&#x90A3;&#x8FB9;&#x5E94;&#x8BE5;&#x662F;&#x654F;&#x611F;&#x4E86;&#xFF0C;&#x76EE;&#x524D;&#x8FC7;&#x5BA1;&#x51E0;&#x7387;&#x6781;&#x4F4E;&#xFF0C;&#x800C;&#x4E14;&#x6709;&#x53EF;&#x80FD;&#x88AB;&#x5EF6;&#x671F;&#x3002;</p>
-<p>&#x2461;&#x5982;&#x679C;App&#x8FDD;&#x53CD;&#x4E0A;&#x8FF0;&#x67D0;&#x70B9;&#xFF0C;&#x5EFA;&#x8BAE;&#x8BA4;&#x771F;&#x4FEE;&#x6539;&#x540E;&#x56DE;&#x590D;&#x82F9;&#x679C;&#xFF0C;&#x91CD;&#x70B9;&#x770B;&#x4E0A;&#x6B21;&#x6216;&#x5386;&#x53F2;&#x88AB;&#x62D2;&#x8BB0;&#x5F55;&#xFF0C;&#x786E;&#x5B9A;&#x56DE;&#x590D;&#x4FA7;&#x91CD;&#x70B9;&#x3002;&#x5982;&#x679C;&#x56DE;&#x590D;&#x540E;&#x5E76;&#x6CA1;&#x6709;&#x63A8;&#x8FDB;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x914D;&#x5408;&#x52A0;&#x901F;&#x5BA1;&#x6838;&#x6216;&#x5BA1;&#x6838;&#x7533;&#x8BC9;&#xFF0C;&#x4E0D;&#x8FC7;&#x6709;&#x5EF6;&#x671F;&#x7B49;&#x98CE;&#x9669;&#x3002;</p>
-<p>&#x2462;&#x9664;&#x4E86;&#x8FD9;&#x4E9B;&#x65B9;&#x6CD5;&#xFF0C;&#x6709;&#x4EBA;&#x8FD8;&#x7528;&#x8FC7;&#x4E00;&#x79CD;&#x65B9;&#x5F0F;&#x8FC7;&#x5BA1;&#xFF0C;&#x5373;&#x7528;&#x65B0;&#x8D26;&#x53F7;&#x4E0A;&#x4F20;&#xFF0C;&#x4E0A;&#x9762;&#x8BF4;&#x8FC7;&#x201C;&#x82F9;&#x679C;&#x5BA1;&#x6838;&#x4EBA;&#x5458;&#x5E94;&#x8BE5;&#x5E76;&#x6CA1;&#x6709;&#x5F00;&#x59CB;&#x5BA1;&#x6838;&#xFF0C;&#x4EC5;&#x662F;&#x9488;&#x5BF9;App&#x7684;&#x5386;&#x53F2;&#x8FDD;&#x89C4;&#x8BB0;&#x5F55;&#x6216;&#x5F00;&#x53D1;&#x8005;&#x8D26;&#x53F7;&#x7684;&#x8FDD;&#x89C4;&#x8BB0;&#x5F55;&#x7B49;&#x53D1;&#x9001;&#x4E86;&#x8FD9;&#x5C01;&#x90AE;&#x4EF6;&#x3002;&#x201D;&#x4F46;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x5E76;&#x4E0D;&#x9002;&#x5408;&#x6240;&#x6709;App&#xFF0C;&#x800C;&#x4E14;&#x82F9;&#x679C;&#x53EF;&#x80FD;&#x4F1A;&#x53D1;&#x73B0;&#x65B0;&#x8D26;&#x53F7;&#x7684;App&#x548C;&#x65E7;&#x8D26;&#x53F7;&#x4EE5;&#x53CA;&#x65E7;App&#x7684;&#x5173;&#x7CFB;&#x800C;&#x4EA7;&#x751F;&#x8FDE;&#x5E26;&#x5904;&#x7F5A;&#xFF0C;&#x8981;&#x770B;&#x8FD0;&#x6C14;&#x3002;</p>
-<p>&#x4E0B;&#x9762;&#x662F;&#x5C0F;&#x52A9;&#x624B;&#x6536;&#x96C6;&#x7684;&#x51E0;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x5728;&#x8FD9;&#x91CC;&#x505A;&#x4E00;&#x4E0B;&#x56DE;&#x590D;&#xFF1A;</p>
-<p>A&#x3001;2.1&#x6709;&#x89E3;&#x5417;&#xFF1F;&#x6709;&#xFF0C;&#x76EE;&#x524D;&#x51FA;&#x73B0;&#x4E86;&#x4EE3;&#x8FC7;&#x5BA1;&#xFF0C;&#x5177;&#x4F53;&#x64CD;&#x4F5C;&#x65B9;&#x5F0F;&#x90FD;&#x662F;&#x79C1;&#x4E0B;&#x8FDB;&#x884C;&#x7684;&#xFF0C;&#x548C;5.2.1&#x548C;3.2.1&#x4E00;&#x6837;&#xFF0C;&#x5927;&#x5BB6;&#x90FD;&#x53BB;&#x7528;&#xFF0C;&#x53CD;&#x590D;&#x523A;&#x6FC0;&#x82F9;&#x679C;&#xFF0C;&#x5BA1;&#x6838;&#x673A;&#x5236;&#x53C8;&#x4F1A;&#x88AB;&#x66F4;&#x6539;&#x3002;</p>
-<p>B&#x3001;&#x53EA;&#x6709;&#x66F4;&#x65B0;&#x7684;App&#x624D;&#x6709;&#x53EF;&#x80FD;&#x6536;&#x5230;&#x88AB;&#x62D2;&#x5927;&#x793C;&#x5305;&#xFF1F;&#x5176;&#x5B9E;&#x4E0D;&#x662F;&#xFF0C;&#x6536;&#x5230;&#x8FD9;&#x5C01;&#x90AE;&#x4EF6;&#x7684;App&#x4E2D;&#x65E2;&#x6709;&#x65B0;&#x63D0;&#x4EA4;&#x7684;App&#xFF0C;&#x4E5F;&#x6709;&#x8981;&#x66F4;&#x65B0;&#x7248;&#x672C;&#x7684;App&#x3002;</p>
-<p>C&#x3001;2.1&#x662F;&#x673A;&#x5BA1;&#xFF1F;&#x76EE;&#x524D;&#x6570;&#x636E;&#x548C;&#x88AB;&#x62D2;&#x7684;&#x73B0;&#x8C61;&#x6765;&#x770B;&#xFF0C;&#x4E3B;&#x8981;&#x662F;&#x673A;&#x5BA1;&#xFF0C;&#x4EBA;&#x5DE5;&#x5BA1;&#x6838;&#x6BD4;&#x4F8B;&#x4E0D;&#x9AD8;&#xFF0C;&#x591A;&#x6570;&#x662F;&#x9488;&#x5BF9;&#x7684;&#x4EE3;&#x7801;&#x3001;App&#x6216;&#x5F00;&#x53D1;&#x8005;&#x8D26;&#x53F7;&#x7684;&#x5386;&#x53F2;&#x8FDD;&#x89C4;&#x8BB0;&#x5F55;&#x7B49;&#x53D1;&#x9001;&#x7684;&#x90AE;&#x4EF6;&#x6D88;&#x606F;&#x3002;</p>
-<p>pp&#x7684;&#x5386;&#x53F2;&#x8FDD;&#x89C4;&#x884C;&#x4E3A;&#x548C;&#x8D26;&#x53F7;&#x7684;&#x5386;&#x53F2;&#x8FDD;&#x89C4;&#x884C;&#x4E3A;&#x90FD;&#x6709;&#x53EF;&#x80FD;&#x89E6;&#x53D1;2.1&#x5927;&#x793C;&#x5305;&#x3002;</p>
-<p>&#x5F53;&#x7136;&#x9664;&#x4E86;&#x4EE5;&#x4E0A;&#x88AB;&#x62D2;&#x539F;&#x56E0;&#x5916;&#xFF0C;4.3&#xFF08;&#x91CD;&#x590D;App&#xFF09;&#x3001;IPv6&#x3001;3.2&#xFF08;f&#xFF09;&#x3001;PLA1.2&#x7B49;&#x4ECD;&#x662F;&#x88AB;&#x62D2;&#x5E38;&#x89C1;&#x539F;&#x56E0;&#xFF01;&#x4E0B;&#x9762;&#x8BF4;&#x4E00;&#x4E0B;4.3&#x3002;</p>
-<p>4.3&#x4E3B;&#x8981;&#x9488;&#x5BF9;&#x7684;&#x662F;&#x91CD;&#x590D;App&#xFF0C;&#x5C31;&#x662F;&#x9A6C;&#x7532;&#x5305;&#xFF0C;4.3&#x88AB;&#x62D2;&#x4E3B;&#x8981;&#x5728;&#x673A;&#x5BA1;&#x9636;&#x6BB5;&#xFF0C;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x901A;&#x5E38;&#x91C7;&#x7528;&#x7684;&#x65B9;&#x5F0F;&#x7B80;&#x5355;&#x6765;&#x8BF4;&#x5206;&#x4EE5;&#x4E0B;&#x51E0;&#x6B65;&#xFF1A;</p>
-<p>A&#x3001;&#x6539;&#x540D;&#x5B57;&#xFF1B;</p>
-<p>B&#x3001;&#x4FEE;&#x6539;&#x7D20;&#x6750;&#x53CA;UI&#x8272;&#x8C03;&#x7B49;&#xFF0C;&#x4F8B;&#x5982;&#x4FEE;&#x6539;icon&#xFF0C;&#x4FEE;&#x6539;&#x4E3B;&#x8272;&#x8C03;&#xFF1B;</p>
-<p>C&#x3001;&#x4FEE;&#x6539;&#x529F;&#x80FD;&#x754C;&#x9762;&#x7B49;&#xFF0C;&#x53EF;&#x6539;&#x529F;&#x80FD;&#x53EF;&#x505A;&#x5C0F;&#x5F00;&#x5173;&#xFF1B;</p>
-<p>D&#x3001;&#x586B;&#x5145;&#x4EE3;&#x7801;&#xFF08;&#x6700;&#x597D;50%&#x4EE5;&#x4E0A;&#xFF09;&#x6216;&#x6CE8;&#x91CA;&#x5757;&#xFF1B;</p>
-<p>&#x9664;&#x4EE5;&#x4E0A;&#x6B65;&#x9AA4;&#x5916;&#xFF0C;&#x8FD8;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x76F8;&#x540C;&#x7684;&#x9A6C;&#x7532;&#x5305;&#x63D0;&#x4EA4;&#x81F3;&#x5C11;&#x8981;&#x95F4;&#x9694;&#x4E00;&#x5929;&#x4EE5;&#x4E0A;&#xFF0C;&#x907F;&#x514D;&#x88AB;&#x540C;&#x4E00;&#x4E2A;&#x5BA1;&#x6838;&#x5458;&#x770B;&#x5230;&#x3002;&#x5F53;&#x7136;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x914D;&#x5408;&#x7740;&#x5347;&#x7EA7;&#x5957;&#x8DEF;&#xFF1A;&#x5347;&#x7EA7;version&#xFF08;&#x7248;&#x672C;&#xFF09;&#x53F7;&#x3001;&#x6362;bundle id&#xFF0C;&#x6362;&#x5F00;&#x53D1;&#x8005;&#x8D26;&#x53F7;&#x518D;&#x63D0;&#x4EA4;&#x5BA1;&#x6838;&#x3002;</p>
-<p>&#x5982;&#x679C;&#x4EE5;&#x4E0A;&#x6B65;&#x9AA4;&#x4E0D;&#x594F;&#x6548;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5C1D;&#x8BD5;&#x91C7;&#x7528;&#x4FEE;&#x6539;&#x5E94;&#x7528;&#x4EF7;&#x683C;&#x3001;&#x53D1;&#x5E03;&#x5730;&#x533A;&#x3001;&#x4EA7;&#x54C1;&#x5206;&#x7C7B;&#x7B49;&#x65B9;&#x5F0F;&#x3002;&#x4E0D;&#x8FC7;&#x6CE8;&#x610F;&#xFF0C;App&#x4E0A;&#x67B6;&#x540E;&#x4EF7;&#x683C;&#x3001;&#x53D1;&#x5E03;&#x5730;&#x533A;&#x662F;&#x53EF;&#x4EE5;&#x4FEE;&#x6539;&#x7684;&#xFF0C;&#x4F46;&#x4EA7;&#x54C1;&#x5206;&#x7C7B;&#x4E0D;&#x53EF;&#x4EE5;&#xFF0C;&#x5BF9;&#x8FD9;&#x4E2A;&#x6709;&#x8981;&#x6C42;&#x7684;&#x614E;&#x7528;&#xFF01;</p>
-<p>IPv6&#x7684;&#x8BDD;&#xFF0C;&#x786E;&#x8BA4;&#x4EE3;&#x7801;&#x6CA1;&#x95EE;&#x9898;&#x7684;&#x8BDD;&#xFF0C;&#x91CD;&#x65B0;&#x63D0;&#x4EA4;1~2&#x6B21;&#x5C31;&#x597D;&#x4E86;&#x3002;&#x591A;&#x6570;&#x662F;&#x5BA1;&#x6838;&#x4EBA;&#x5458;&#x6240;&#x5728;&#x7684;&#x7F51;&#x7EDC;&#x73AF;&#x5883;&#x5BFC;&#x81F4;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x653E;&#x5FC3;&#xFF0C;&#x91CD;&#x65B0;&#x63D0;&#x4EA4;&#x65F6;&#x5C06;&#x622A;&#x56FE;&#x6216;&#x62CD;&#x4E0B;&#x89C6;&#x9891;&#x653E;&#x9644;&#x4EF6;&#x91CC;&#x6216;&#x76F4;&#x63A5;&#x5411;&#x82F9;&#x679C;&#x7533;&#x8BC9;&#x3002;&#x5982;&#x679C; App&#x672C;&#x8EAB;&#x6709;&#x95EE;&#x9898;&#xFF0C;&#x4F8B;&#x5982;&#x4E0D;&#x517C;&#x5BB9; IPv6&#xFF0C;&#x6700;&#x597D;&#x7684;&#x529E;&#x6CD5;&#x662F;&#x8BA9;App&#x517C;&#x5BB9; IPv6 &#x6216;&#x901A;&#x8FC7;&#x5347;&#x7EA7;&#x670D;&#x52A1;&#x5668;&#x6765;&#x652F;&#x6301;IPv6&#xFF0C;&#x5176;&#x4ED6;&#x4EE3;&#x7801;&#x95EE;&#x9898;&#x95EE;&#x95EE;&#x6280;&#x672F;&#x5C31;OK&#x4E86;&#x3002;</p>
-
-                        
-                    </div>
-
-                    
-                    
-                    
-
-                    <div class="description post-description">
-    <span class="post-description-item">
-        <time datetime="2018-05-22T02:49:10.742Z" itemprop="datePublished">2018-05-22</time>
-
-    </span>
-    <span class="post-description-item">
+    <!-- 404页  -->
+            
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-img" style="background-image: url(/blog/source/intro/post-bg.jpg)"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+            苹果审核指南
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+            
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页meta -->
         
-    </span>
+            <!-- 文章页标签  -->
+            
+            <div class="post-intro-meta">
+                <span class="post-intro-calander iconfont-archer">&#xe676;</span>
+                <span class="post-intro-time">2018/05/22</span>
+                
+                <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                    <span class="iconfont-archer">&#xe602;</span>
+                    <span id="busuanzi_value_page_pv"></span>
+                </span>
+                
+                <span class="shareWrapper">
+                    <span class="iconfont-archer shareIcon">&#xe71d;</span>
+                    <span class="shareText">Share</span>
+                    <ul class="shareList">
+                        <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                            <div class="share-qrcode"></div>
+                        </li>
+                        <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                        <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                        <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                        <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                    </ul>
+                </span>
+            </div>
+        
+    </div>
 </div>
+        <script>
+  // load webfont-loader async, and add callback function
+  function async(u, cb, err) {
+    var d = document, t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (cb) { o.addEventListener('load', function (e) { cb(null, e); }, false); }
+    if (err) { o.addEventListener('error', function (e) { err(null, e); }, false); }
+    s.parentNode.insertBefore(o, s);
+  }
+  
+  // get user agent
+  var browser = {
+    versions: function () {
+      var u = window.navigator.userAgent;
+      return {
+        userAgent: u,
+        trident: u.indexOf('Trident') > -1, //IE内核
+        presto: u.indexOf('Presto') > -1, //opera内核
+        webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+        gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+        mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+        ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+        android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+        iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+        iPad: u.indexOf('iPad') > -1, //是否为iPad
+        webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+        weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+        uc: u.indexOf('UCBrowser') > -1 //是否为android下的UC浏览器
+      };
+    }()
+  }
+  console.log("userAgent:" + browser.versions.userAgent);
 
-                </div>
-                
-                <div id="pagination" class="nav-web ui text container pagination">
+  // callback
+  function fontLoaded() {
+    console.log('font loaded');
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document.getElementsByClassName('intro-title')[0].classList.add('intro-fade-in');
+      document.getElementsByClassName('intro-subtitle')[0].classList.add('intro-fade-in');
+      var postIntroTags = document.getElementsByClassName('post-intro-tags')[0],
+        postIntroMeat = document.getElementsByClassName('post-intro-meta')[0];
+      if (postIntroTags) {
+        postIntroTags.classList.add('post-fade-in');
+      }
+      if (postIntroMeat) {
+        postIntroMeat.classList.add('post-fade-in');
+      }
+    }
+  }
 
-    <div class="ui stackable two column divided grid container">
-        <div class="row">
-            <div class="column nav-left">
-                
+  // UC不支持跨域，所以直接显示
+  function asyncCb(){
+    if (browser.versions.uc) {
+      console.log("UCBrowser");
+      fontLoaded();
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular']
+        },
+        loading: function () {  //所有字体开始加载
+          // console.log('loading');
+        },
+        active: function () {  //所有字体已渲染
+          fontLoaded();
+        },
+        inactive: function () { //字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout');
+          fontLoaded();
+        },
+        timeout: 5000 // Set the timeout to two seconds
+      });
+    }
+  }
 
-                <a href="/blog/2018/05/22/vi编辑器/" class="ui tiny button">
+  function asyncErr(){
+    console.warn('script load from CDN failed, will load local script')
+  }
 
-                    <i class="angle left icon"></i>
-                    
-                    Linux/Unix下的vi文本编辑器
-                    
+  var asyncLoadWithFallBack = function(arr, success, reject) {
+      var currReject = function(){
+        reject()
+        arr.shift()
+        if(arr.length)
+          async(arr[0], success, currReject)
+        }
 
+      async(arr[0], success, currReject)
+  }
+
+  asyncLoadWithFallBack([
+    "https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js", 
+    "https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js",
+    "/blog/lib/webfontloader.min.js"
+  ], asyncCb, asyncErr)
+</script>        
+        <img class="loading" src="/blog/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+        <div class="container container-unloaded">
+            <main class="main post-page">
+    <article class="article-entry">
+        <h4 id="上架最后一部选项之IDFA"><a href="#上架最后一部选项之IDFA" class="headerlink" title="上架最后一部选项之IDFA"></a>上架最后一部选项之IDFA</h4><p><img src="http://upload-images.jianshu.io/upload_images/10453069-bc8a961bf37e9cbe?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>1.出口合规信息：如果应用中采用了AES 和base 64 SHA512 加密算法，点no都是可以通过的，避免给自己找麻烦，这项选no就行。</p>
+<p>2.内容版权：只要没有明显的第三方logo，不会挂你的，那些分享第三方平台不算。 如果恰巧碰到了，一般审核工作人员会把侵权的截图发给你，那就需要找第三方授权了。</p>
+<p>3.广告标识符：</p>
+<p>想知道你的程序哪个三方库中使用到了IDFA，cd到项目根目录，用以下命令行查看</p>
+<blockquote>
+<p>grep -r advertisingIdentifier . （别少了最后那个点号）。</p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/10453069-d90d236429723119?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image"></p>
+<p>类似图上，包含了该怎么办，借鉴了mob的做法：</p>
+<p>友盟提供IDFA版和不含IDFA版两个SDK，两个SDK在数据上并没有差异，采集IDFA是为了防止今后因为苹果可能禁止目前使用的openudid而造成的数据波动。</p>
+<p><strong><em>由于Appstore禁止不使用广告而采集IDFA的app上架，我们勾选2，3，4项即可</em></strong></p>
+<p>1.serve advertisements within the app</p>
+<p>服务应用中的广告。如果你的应用中集成了广告的时候，你需要勾选这一项。</p>
+<p>√2.Attribute this app installation to a previously served advertisement.</p>
+<p>跟踪广告带来的安装。</p>
+<p>√3.Attribute an action taken within this app to a previously served advertisement<br>，<br>跟踪广告带来的用户的后续行为。</p>
+<p>√4.Limit Ad Tracking setting in iOS</p>
+<p>这一项下的内容其实就是对你的应用使用idfa的目的做下确认，只要你选择了采集idfa，那么这一项都是需要勾选的。</p>
+<hr>
+<h3 id="提审的流程-–-预审、机器审核和人工审核"><a href="#提审的流程-–-预审、机器审核和人工审核" class="headerlink" title="提审的流程 – 预审、机器审核和人工审核"></a>提审的流程 – 预审、机器审核和人工审核</h3><h6 id="预审阶段："><a href="#预审阶段：" class="headerlink" title="预审阶段："></a>预审阶段：</h6><p>打包上传提交appstore这个阶段是预审阶段，会对代码里的一些配置文件plist进行审核，比如没有对使用相册相机或地理位置等权限做说明会被直接打回来，发邮件告诉你。没有问题的话才会在itunes里出现</p>
+<h6 id="机器审核阶段："><a href="#机器审核阶段：" class="headerlink" title="机器审核阶段："></a>机器审核阶段：</h6><p>也就是 Waiting For Review（等待审核）阶段一般是机审，比如马甲包就是复制品，有太多相似的功能。被拒原因4.3就是这一阶段的审核结果。</p>
+<h6 id="人工审核："><a href="#人工审核：" class="headerlink" title="人工审核："></a>人工审核：</h6><p>即In Review（审核）阶段。这一阶段一般会看描述，截图，监测app使用情况有没有明显的bug这类的，ipv6就在这阶段被提出来的。可以通过后台查看有无美国ip登录从而判断是否进入了这一阶段。</p>
+<hr>
+<p>###常被拒绝的条款</p>
+<p>######2.1大礼包<br><img src="https://upload-images.jianshu.io/upload_images/10453069-7764b116d86ccd9e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="8358211-008649dae13e33b3.png"><br>1.1.6 –包含虚假信息，功能或误导性元数据</p>
+<p>一般是因为标题或者icon和截图等有误导的嫌疑，或有些关键词是被苹果列入黑名单的，例如红包包、话费等，但审核条款又没有明确指出。对于上述情况的解决办法是使用保守的文案或素材。</p>
+<p>2.3.0 – 含有不经审核也可更改App功能</p>
+<p>如改变App功能的热更新，这种情况需要把热更新去除,或者对热更新模块代码做深度混淆处理!</p>
+<p>2.3.1 – 含有隐藏功能或为记录的功能，包括定向到赌博或彩票网站的开关。</p>
+<p>常规解决方式：去除隐藏功能模块代码或将需要隐藏功能的代码及定向跳转链接网址做混淆处理，适当增加逻辑复杂度。3.1.1 –应用内购以外的支付机制来解锁App中的功能或功能。</p>
+<p>对于第三方支付,尽可能避免使用易扫描的SDK版本,推荐使用H5版本支付。支付跳转链接相应的做屏蔽混淆处理。</p>
+<p>4.3.0 –是另一款应用的复制品，或与另一款应用明显相似。</p>
+<p>被认为是重复App或马甲包，变更UI和名称，填充无用代码等，下面会具体讲。</p>
+<p>5.2.1 –未由拥有并负责提供该应用程序提供的任何服务的法律实体提交。</p>
+<p>未提供 App 上架所需的行业资质，比如：金融营业许可证、游戏版号等。这个上面讲过些常规方式。</p>
+<p>5.3.4 – 含有货币游戏（如：体育下注、赌场游戏等），但未提供相关许可资质。</p>
+<p>同上，提供资质，审核时最好不要勾选中国区，或使用海外账号。</p>
+<p>①如果App没有违反上述任何一点，其实直接回复没有违反即可！当然，如果想增加过审几率也可以按照邮件中罗列的审核指南一一进行解释，说明自家 App 并不存在这些规则中的问题，尽可能描述详细。如果回复后并没有推进，可以配合加速审核或审核申诉，不过需要注意，加速审核次数不要用太多，审核申诉可能引来审核团队更严格的审核，需要谨慎。</p>
+<p>注：2.1刚出现的时，即使App有违规行为直接回复也是有可能过审的，但是目前有点用烂了，苹果那边应该是敏感了，目前过审几率极低，而且有可能被延期。</p>
+<p>②如果App违反上述某点，建议认真修改后回复苹果，重点看上次或历史被拒记录，确定回复侧重点。如果回复后并没有推进，也可以配合加速审核或审核申诉，不过有延期等风险。</p>
+<p>③除了这些方法，有人还用过一种方式过审，即用新账号上传，上面说过“苹果审核人员应该并没有开始审核，仅是针对App的历史违规记录或开发者账号的违规记录等发送了这封邮件。”但这种方式并不适合所有App，而且苹果可能会发现新账号的App和旧账号以及旧App的关系而产生连带处罚，要看运气。</p>
+<p>下面是小助手收集的几个问题，在这里做一下回复：</p>
+<p>A、2.1有解吗？有，目前出现了代过审，具体操作方式都是私下进行的，和5.2.1和3.2.1一样，大家都去用，反复刺激苹果，审核机制又会被更改。</p>
+<p>B、只有更新的App才有可能收到被拒大礼包？其实不是，收到这封邮件的App中既有新提交的App，也有要更新版本的App。</p>
+<p>C、2.1是机审？目前数据和被拒的现象来看，主要是机审，人工审核比例不高，多数是针对的代码、App或开发者账号的历史违规记录等发送的邮件消息。</p>
+<p>pp的历史违规行为和账号的历史违规行为都有可能触发2.1大礼包。</p>
+<p>当然除了以上被拒原因外，4.3（重复App）、IPv6、3.2（f）、PLA1.2等仍是被拒常见原因！下面说一下4.3。</p>
+<p>4.3主要针对的是重复App，就是马甲包，4.3被拒主要在机审阶段，解决这个问题通常采用的方式简单来说分以下几步：</p>
+<p>A、改名字；</p>
+<p>B、修改素材及UI色调等，例如修改icon，修改主色调；</p>
+<p>C、修改功能界面等，可改功能可做小开关；</p>
+<p>D、填充代码（最好50%以上）或注释块；</p>
+<p>除以上步骤外，还需要注意相同的马甲包提交至少要间隔一天以上，避免被同一个审核员看到。当然，还可以配合着升级套路：升级version（版本）号、换bundle id，换开发者账号再提交审核。</p>
+<p>如果以上步骤不奏效，还可以尝试采用修改应用价格、发布地区、产品分类等方式。不过注意，App上架后价格、发布地区是可以修改的，但产品分类不可以，对这个有要求的慎用！</p>
+<p>IPv6的话，确认代码没问题的话，重新提交1~2次就好了。多数是审核人员所在的网络环境导致的问题，如果不放心，重新提交时将截图或拍下视频放附件里或直接向苹果申诉。如果 App本身有问题，例如不兼容 IPv6，最好的办法是让App兼容 IPv6 或通过升级服务器来支持IPv6，其他代码问题问问技术就OK了。</p>
+
+    </article>
+    <!-- license  -->
+    
+        <div class="license-wrapper">
+            <p>原文作者: <a href="http://baiyunxing.com/blog">Yunxing Bai</a>
+            <p>原文链接: <a href="http://baiyunxing.com/blog/2018/05/22/苹果审核指南/">http://baiyunxing.com/blog/2018/05/22/苹果审核指南/</a>
+            <p>发表日期: <a href="http://baiyunxing.com/blog/2018/05/22/苹果审核指南/">May 22nd 2018, 10:49:10</a>
+            <p>版权声明: 本文采用<a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator  -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href= "/blog/2018/05/22/vi编辑器/" title= Linux/Unix下的vi文本编辑器 >
+                    <div class="nextTitle">Linux/Unix下的vi文本编辑器</div>
                 </a>
-
-                
-            </div>
-            <div class="column nav-right">
-                
-
-                <a class="ui tiny button disabled">下一篇<i class="angle right icon"></i></a>
-
-                
-            </div>
-        </div>
-    </div>
-
-</div>
-                
-            </div>
-
             
-            <div class="three wide computer three wide tablet column">
-
-                <div class="ui sticky article-toc" id="article-toc">
-                    <!-- toc -->
-                    <ol class="ui ordered list"><li><a href="#上架最后一部选项之IDFA"><span>上架最后一部选项之IDFA</span></a></li></ol></li><li><a href="#提审的流程-–-预审、机器审核和人工审核"><span>提审的流程 – 预审、机器审核和人工审核</span></a><ol><li><a href="#预审阶段："><span>预审阶段：</span></a></li><li><a href="#机器审核阶段："><span>机器审核阶段：</span></a></li><li><a href="#人工审核："><span>人工审核：</span></a></li></ol></li></ol></li></ol>
-                </div>
-
-            </div>
+        </li>
+        <li class="previous">
             
+        </li>
+    </ul>
+    <!-- 评论插件 -->
+    <!-- 来必力City版安装代码 -->
 
+<!-- City版安装代码已完成 -->
+    
+    
+    <!--PC版-->
+
+    <!--PC版-->
+
+
+    
+    <!-- 评论 -->
+</main>
+            <!-- profile -->
+            
         </div>
+        <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+    <div class="social">
+        
+    
+        
+            
+                <a href="mailto:12345@qq.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="//github.com/fi3ework" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+            
+                <span class="iconfont-archer wechat" title=wechat>
+                  
+                  <img class="profile-qr" src="/blog/assets/example_qr.png" />
+                </span>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
     </div>
-</div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span>
+    </div>
+    <!-- 不蒜子  -->
+    
+    <div class="busuanzi-container">
+        <span id="busuanzi_container_site_pv">PV: <span id="busuanzi_value_site_pv"></span>
+        </span>
+    </div>
+    
+</footer>
+    </div>
+    <!-- toc -->
+    
+    <div class="toc-wrapper" style=
+    
 
 
-                    <!--</div>-->
-                <!--</div>-->
-            <!--</div>-->
+
+
+
+
+
+top:50vh;
+
+    >
+        <div class="toc-catalog">
+            <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
         </div>
-        <div class="ui vertical footer segment">
-    <div class="ui center aligned container">
-        <div class="ui inverted section divider"></div>
-        &copy; 2018 <a href="/">Yunxing Bai</a>,
-        Powered by <a href="https://github.com/henryhuang/hexo-theme-aloha" target="_blank">Aloha</a> and <a
-                href="http://hexo.io/" target="_blank">Hexo</a>.
+        <ol class="toc"><li class="toc-item toc-level-4"><a class="toc-link" href="#上架最后一部选项之IDFA"><span class="toc-number">1.</span> <span class="toc-text">上架最后一部选项之IDFA</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#提审的流程-–-预审、机器审核和人工审核"><span class="toc-number"></span> <span class="toc-text">提审的流程 – 预审、机器审核和人工审核</span></a><ol class="toc-child"><li class="toc-item toc-level-6"><a class="toc-link" href="#预审阶段："><span class="toc-number">0.0.1.</span> <span class="toc-text">预审阶段：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#机器审核阶段："><span class="toc-number">0.0.2.</span> <span class="toc-text">机器审核阶段：</span></a></li><li class="toc-item toc-level-6"><a class="toc-link" href="#人工审核："><span class="toc-number">0.0.3.</span> <span class="toc-text">人工审核：</span></a></li></ol></li></ol></li></ol>
     </div>
+    
+    <div class="back-top iconfont-archer">&#xe639;</div>
+    <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+          <div class="sidebar-panel-archives">
+    <!-- 在ejs中将archive按照时间排序 -->
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <div class="total-archive"> Total : 3 </div>
+    
+    <div class="post-archive">
+    
+    
+    
+    
+    <div class="archive-year"> Invalid date </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/blog/2018/05/22/苹果审核指南/" >苹果审核指南</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> Invalid date </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/blog/2018/05/22/vi编辑器/" >Linux/Unix下的vi文本编辑器</a>
+        </li>
+    
+    
+    
+    
+    
+        </ul>
+    
+    <div class="archive-year"> Invalid date </div>
+    <ul class="year-list">
+    
+    
+        <li class="archive-post-item">
+            <span class="archive-post-date">Invalid date</span><a class="archive-post-title" href= "/blog/2018/05/22/jsonModel/" >第三方框架之JsonModel</a>
+        </li>
+    
+    </div>
+  </div>
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+    
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+    缺失模块。<br/>
+    1、请确保node版本大于6.2<br/>
+    2、在博客根目录（注意不是archer根目录）执行以下命令：<br/>
+    <span style="color: #f75357; font-size: 1rem; line-height: 2rem;">npm i hexo-generator-json-content --save</span><br/>
+    3、在根目录_config.yml里添加配置：
+    <pre style="color: #787878; font-size: 0.6rem;">
+jsonContent:
+  meta: false
+  pages: false
+  posts:
+    title: true
+    date: true
+    path: true
+    text: false
+    raw: false
+    content: false
+    slug: false
+    updated: false
+    comments: false
+    link: false
+    permalink: false
+    excerpt: false
+    categories: true
+    tags: true</pre>
+    </div> 
+    <div class="sidebar-tags-list"></div>
 </div>
-
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
     </div>
-
-
-
-
-<!-- scripts list from theme config.yml -->
-
-<script src="//cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
-
-<script src="//cdn.bootcss.com/semantic-ui/2.2.4/semantic.min.js"></script>
-
-<script src="//cdn.bootcss.com/algoliasearch/3.18.1/algoliasearch.min.js"></script>
-
-<script src="//cdn.bootcss.com/algoliasearch-helper-js/2.13.0/algoliasearch.helper.min.js"></script>
-
-<script src="/blog/js/semantic-ui-algolia.js"></script>
-
-<script src="/blog/js/aloha-events.js"></script>
-
-
-
-</body>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+    </div>
+</div> 
+    <script>
+    var siteMeta = {
+        root: '/blog/',
+        author: 'Yunxing Bai'
+    }
+</script>
+    <!-- CDN failover -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.$ === 'undefined')
+        {
+            console.warn('jquery load from jsdelivr failed, will load local script')
+            document.write('<script src="/blog/lib/jquery.min.js">\x3C/script>')
+        }
+    </script>
+    <script src="/blog/scripts/main.js"></script>
+    <!-- busuanzi  -->
+    
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    
+    <!-- CNZZ  -->
+    
+    </div>
+    <!-- async load share.js -->
+    
+        <script src="/blog/scripts/share.js" async></script>    
+    
+    </body>
 </html>
+
+
